@@ -1,6 +1,5 @@
 import React from "react";
 import "./homeCards.scss";
-import Nav from "./Nav";
 
 const HomeCards = ({ data }) => {
   const modeS = "modelS";
