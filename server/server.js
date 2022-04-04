@@ -24,7 +24,10 @@ db.connect((err) => {
 });
 
 app.get("/", (req, res) => {
-  res.json({ message: `https://http.cat/404` });
+  db.query("SELECT * FROM tesla_cars", (err, response) => {
+    if (err) res.json({ message: `https://http.cat/404` });
+    res.status(200).json(response);
+  });
 });
 
 app.get("/models", (req, res) => {
