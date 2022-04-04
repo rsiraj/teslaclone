@@ -1,6 +1,7 @@
 import React from "react";
 import { Link, Outlet } from "react-router-dom";
 import SideNav from "./SideNav";
+
 const Nav = () => {
   return (
     <div>
@@ -10,7 +11,7 @@ const Nav = () => {
       <Link to="/modely">Model Y</Link>
       <Link to="solarroofs">Solar Panels</Link>
       <Link to="solarpanels">Soolar Roof</Link>
-      <SideNav></SideNav>
+      {/* <SideNav></SideNav> */}
       <Outlet></Outlet>
     </div>
   );

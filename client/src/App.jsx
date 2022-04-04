@@ -9,7 +9,6 @@ import ModelY from "./pages/ModelY";
 import SolarRoof from "./pages/SolarRoof";
 import SolarPanels from "./pages/SolarPanels";
 import Nav from "./components/Nav";
-import Footer from "./components/Footer";
 
 function App() {
   return (
