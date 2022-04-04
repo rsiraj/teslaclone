@@ -1,7 +1,16 @@
 import React from "react";
+import Footer from "../components/Footer";
+import HomeCards from "../components/HomeCards";
+import Nav from "../components/Nav";
 
-const Landing = () => {
-  return <div>Landing</div>;
+const Landing = ({ data }) => {
+  return (
+    <>
+      <Nav />
+      <HomeCards data={data} />
+      <Footer />
+    </>
+  );
 };
 
 export default Landing;
