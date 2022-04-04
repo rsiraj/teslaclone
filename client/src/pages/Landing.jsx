@@ -6,7 +6,8 @@ import Nav from "../components/Nav";
 const Landing = ({ data }) => {
   return (
     <>
-      <HomeCards />
+      <HomeCards data={data} />
+      {/* <Footer /> */}
     </>
   );
 };

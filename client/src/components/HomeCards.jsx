@@ -1,7 +1,7 @@
 import React from "react";
 import "./homeCards.scss";
 
-const HomeCards = () => {
+const HomeCards = ({ data }) => {
   const modeS = "modelS";
   return (
     <div>
