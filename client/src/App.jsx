@@ -12,17 +12,18 @@ import SolarPanels from "./pages/SolarPanels";
 import Nav from "./components/Nav";
 
 function App() {
-  const [data, setData] = useState([]);
-  useEffect(() => {
-    Axios.get("http://127.0.0.1:8000").then((response) => {
-      setData(response.data);
-    });
-  }, []);
+  // const [data, setData] = useState([]);
+  // useEffect(() => {
+  //   Axios.get("http://127.0.0.1:8000").then((response) => {
+  //     setData(response.data);
+  //   });
+  // }, []);
 
   return (
     <Router>
+      <nav />
       <Routes>
-        <Route path="/" element={<Landing data={data} />} />
+        <Route path="/" element={<Landing />} />
         <Route path="/models" element={<ModelS />} />
         <Route path="/model3" element={<Model3 />} />
         <Route path="/modelx" element={<ModelX />} />
