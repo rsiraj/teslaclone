@@ -12,7 +12,6 @@ const HomeCards = ({ data }) => {
         >
           <div className="hero-card_description">
             <h1>{item.car_model}</h1>
-            <p>Order Online for Touchless Delivery</p>
           </div>
 
           <span role="button" className="animate-chevron_bounce">
