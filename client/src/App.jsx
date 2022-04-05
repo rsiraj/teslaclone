@@ -10,6 +10,7 @@ import ModelY from "./pages/ModelY";
 import SolarRoof from "./pages/SolarRoof";
 import SolarPanels from "./pages/SolarPanels";
 import Nav from "./components/Nav";
+// import Footer from "./components/Footer";
 
 function App() {
   const [data, setData] = useState([]);
@@ -21,7 +22,7 @@ function App() {
 
   return (
     <Router>
-      <Nav></Nav>
+      <Nav />
       <Routes>
         <Route path="/" element={<Landing data={data} />} />
         <Route path="/models" element={<ModelS />} />
