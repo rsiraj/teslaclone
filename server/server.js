@@ -17,7 +17,7 @@ const db = mysql.createConnection({
   password: SQL_PASSWORD,
   database: "tesla_clone",
 });
-//comment
+//comment2
 
 db.connect((err) => {
   if (err) throw err;
