@@ -4,46 +4,62 @@ import "./Nav.scss";
 
 const Nav = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
-  // const handleToggle = () => {
-  //   setNavbarOpen(!navbarOpen);
-  // };
-  // const closeMenu = () => {
-  //   setNavbarOpen(false);
-  // };
   return (
     <div className="header">
-      <img
-        src="./img/tesla-logo-header.png"
-        alt="tesla"
-        className="header-logo"
-      />
+      <NavLink to="/" onClick={() => setNavbarOpen(false)}>
+        <img
+          src="./img/tesla-logo-header.png"
+          alt="tesla"
+          className="header-logo"
+        />
+      </NavLink>
       <div className="header-nav">
-        <NavLink to="/models" className="header-nav-links">
+        <NavLink
+          to="/models"
+          className="header-nav-links"
+          onClick={() => setNavbarOpen(false)}
+        >
           Model S
         </NavLink>
-        <NavLink to="/model3" className="header-nav-links">
+        <NavLink
+          to="/model3"
+          className="header-nav-links"
+          onClick={() => setNavbarOpen(false)}
+        >
           Model 3
         </NavLink>
-        <NavLink to="/modelx" className="header-nav-links">
+        <NavLink
+          to="/modelx"
+          className="header-nav-links"
+          onClick={() => setNavbarOpen(false)}
+        >
           Model X
         </NavLink>
-        <NavLink to="/modely" className="header-nav-links">
+        <NavLink
+          to="/modely"
+          className="header-nav-links"
+          onClick={() => setNavbarOpen(false)}
+        >
           Model Y
         </NavLink>
-        <NavLink to="solarroofs" className="header-nav-links">
+        <NavLink
+          to="solarroofs"
+          className="header-nav-links"
+          onClick={() => setNavbarOpen(false)}
+        >
           Solar Panels
         </NavLink>
-        <NavLink to="solarpanels" className="header-nav-links">
+        <NavLink
+          to="solarpanels"
+          className="header-nav-links"
+          onClick={() => setNavbarOpen(false)}
+        >
           Solar Roof
         </NavLink>
       </div>
       <div className="header-nav-menu">
-        <NavLink to="" className="header-nav-links">
-          Shop
-        </NavLink>
-        <NavLink to="" className="header-nav-links">
-          Account
-        </NavLink>
+        <span className="header-nav-links">Shop</span>
+        <span className="header-nav-links">Account</span>
         <span
           className="header-nav-links menu"
           onClick={() => setNavbarOpen(true)}

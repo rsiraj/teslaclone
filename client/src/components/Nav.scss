@@ -51,7 +51,12 @@
   margin-right: 10px;
   color: black;
 }
-
+:hover.header-nav-links {
+  background-color: #90909054;
+  border-radius: 10px;
+  transition: 0.2s ease-in-out;
+  padding: auto;
+}
 .menu {
   cursor: pointer;
 }
@@ -68,14 +73,16 @@
   right: 0;
   background: white;
   width: 300px;
+  transform: translateX(100%);
   z-index: 10;
-  display: none;
   padding: 20px;
+  transition: 0.3s ease-in-out;
 }
 .hidden-menu ul li {
   list-style: none;
   padding: 15px;
 }
 .show {
-  display: block;
+  transform: translateX(0);
+  transition: 0.3s ease-in-out;
 }
