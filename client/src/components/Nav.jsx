@@ -8,7 +8,7 @@ const Nav = () => {
     setNavbarOpen(!navbarOpen);
   };
   const closeMenu = () => {
-    if (navbarOpen) console.log("click");
+    setNavbarOpen(false);
   };
   return (
     <div className="header">
