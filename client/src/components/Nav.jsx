@@ -4,12 +4,12 @@ import "./Nav.scss";
 
 const Nav = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
-  const handleToggle = () => {
-    setNavbarOpen(!navbarOpen);
-  };
-  const closeMenu = () => {
-    setNavbarOpen(false);
-  };
+  // const handleToggle = () => {
+  //   setNavbarOpen(!navbarOpen);
+  // };
+  // const closeMenu = () => {
+  //   setNavbarOpen(false);
+  // };
   return (
     <div className="header">
       <img
@@ -18,7 +18,7 @@ const Nav = () => {
         className="header-logo"
       />
       <div className="header-nav">
-        <NavLink to="/models" className="header-nav-links" onClick={closeMenu}>
+        <NavLink to="/models" className="header-nav-links">
           Model S
         </NavLink>
         <NavLink to="/model3" className="header-nav-links">
@@ -44,12 +44,15 @@ const Nav = () => {
         <NavLink to="" className="header-nav-links">
           Account
         </NavLink>
-        <NavLink to="" className="header-nav-links menu" onClick={handleToggle}>
+        <span
+          className="header-nav-links menu"
+          onClick={() => setNavbarOpen(true)}
+        >
           Menu
-        </NavLink>
+        </span>
       </div>
       <div className={`hidden-menu ${navbarOpen ? "show" : ""}`}>
-        <button onClick={closeMenu}>close</button>
+        <button onClick={() => setNavbarOpen(false)}>close</button>
         <ul>
           <li>
             <NavLink className="header-nav-links" to="">

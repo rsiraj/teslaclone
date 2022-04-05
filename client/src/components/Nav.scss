@@ -11,6 +11,7 @@
   right: 0;
   z-index: 1;
   overflow: hidden;
+  font-family: "Sawarabi Gothic", sans-serif;
 }
 
 .header-logo {
@@ -26,13 +27,14 @@
 
 .header-nav .header-nav-links {
   font-weight: 600;
-  text-transform: uppercase;
   padding: 0 10px;
   flex-wrap: nowrap;
+  color: black;
+  font-family: "Sawarabi Gothic", sans-serif;
 }
 
-@media (max-width: 768px) {
-  .header {
+@media (max-width: 900px) {
+  .header-nav {
     display: none;
   }
 }
@@ -46,8 +48,8 @@
 
 .header-nav-menu .header-nav-links {
   font-weight: 600;
-  text-transform: uppercase;
   margin-right: 10px;
+  color: black;
 }
 
 .menu {
@@ -56,6 +58,7 @@
 
 .header-nav-links {
   text-decoration: none;
+  color: black;
 }
 
 .hidden-menu {
