@@ -11,12 +11,13 @@ app.use(express.json());
 app.use(cors());
 
 const db = mysql.createConnection({
-  host: "localhost",
+  host: "tesla-clone.ctul2xxq1xtc.us-east-2.rds.amazonaws.com",
   port: 3306,
-  user: "root",
+  user: "admin",
   password: SQL_PASSWORD,
   database: "tesla_clone",
 });
+//comment2
 
 db.connect((err) => {
   if (err) throw err;
@@ -24,7 +25,10 @@ db.connect((err) => {
 });
 
 app.get("/", (req, res) => {
-  res.json({ message: `https://http.cat/404` });
+  db.query("SELECT * FROM tesla_cars", (err, response) => {
+    if (err) res.json({ message: `https://http.cat/404` });
+    res.status(200).json(response);
+  });
 });
 
 app.get("/models", (req, res) => {
