@@ -22,7 +22,7 @@ function App() {
 
   return (
     <Router>
-      <Nav></Nav>
+      <Nav />
       <Routes>
         <Route path="/" element={<Landing data={data} />} />
         <Route path="/models" element={<ModelS />} />

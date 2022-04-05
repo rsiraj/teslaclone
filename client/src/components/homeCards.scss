@@ -5,11 +5,55 @@
 .hero-card {
   height: 100vh;
   width: 100%;
-}
-
-.hero-card_modelS {
-  background-image: url("https://tesla-cdn.thron.com/delivery/public/image/tesla/e90a341e-f9ca-4aa1-8eab-94afea118786/bvlatuR/std/2880x1800/M3-Homepage-D");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  &.hero-card_1 {
+    background-image: url("../../public/img/M3-Homepage-D.jpeg");
+  }
+  &.hero-card_2 {
+    background-image: url("../../public/img/Desktop-ModelY.jpeg");
+  }
+  &.hero-card_3 {
+    background-image: url("../../public/img/ms-homepage-desktop.jpeg");
+  }
+  &.hero-card_4 {
+    background-image: url("../../public/img/ModelX-Homepage-D.jpeg");
+  }
+
+  & .chevron-down {
+    background-color: transparent;
+    inline-size: 24px;
+    block-size: 24px;
+    max-inline-size: 100%;
+    min-block-size: 24px;
+    min-inline-size: 24px;
+    transition: fill 0.3s ease, stroke 0.3s ease;
+  }
+}
+
+.hero-card_description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px;
+
+  & h1 {
+    font-size: 40px;
+  }
+
+  & p {
+    font-size: inherit;
+  }
+}
+
+.animate-chevron_bounce {
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-name: chevron_bounce;
+
+  &[role="button"] {
+    cursor: pointer;
+  }
 }

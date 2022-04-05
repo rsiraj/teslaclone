@@ -8,7 +8,7 @@ const Nav = () => {
     setNavbarOpen(!navbarOpen);
   };
   const closeMenu = () => {
-    setNavbarOpen(false);
+    if (navbarOpen) console.log("click");
   };
   return (
     <div className="header">
@@ -48,7 +48,6 @@ const Nav = () => {
           Menu
         </NavLink>
       </div>
-
       <div className={`hidden-menu ${navbarOpen ? "show" : ""}`}>
         <button onClick={closeMenu}>close</button>
         <ul>
