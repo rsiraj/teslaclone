@@ -9,7 +9,7 @@
   top: 0;
   left: 0;
   right: 0;
-  //   overflow: hidden;
+  overflow: hidden;
 }
 
 .header-nav {
@@ -24,17 +24,21 @@
   text-transform: uppercase;
   padding: 0 10px;
   flex-wrap: nowrap;
+}
 
-  @media (max-width: 768px) {
+@media (max-width: 768px) {
+  .header {
     display: none;
   }
 }
+
 // .header-nav-menu {
 //   display: flex;
 //   align-items: center;
 //   justify-content: center;
 //   flex: 1;
 // }
+
 .header-nav-menu .header-nav-links {
   font-weight: 600;
   text-transform: uppercase;
