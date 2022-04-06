@@ -1,137 +1,178 @@
 import React, { useState } from "react";
-// import Logo from "../../public/img/tesla-logo-header.png";
-import { Link, Outlet } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
 import "./Nav.scss";
 
 const Nav = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
-  const handleToggle = () => {
-    setNavbarOpen((prev) => !prev);
-  };
-  const closeMenu = () => {
-    if (navbarOpen) console.log("click");
-  };
   return (
     <div className="header">
-      <img src="" alt="tesla" className="header-logo" />
+      <NavLink to="/" onClick={() => setNavbarOpen(false)}>
+        <img
+          src="./img/tesla-logo-header.png"
+          alt="tesla"
+          className="header-logo"
+        />
+      </NavLink>
       <div className="header-nav">
-        <Link to="/models" className="header-nav-links">
+        <NavLink
+          to="/models"
+          className="header-nav-links"
+          onClick={() => setNavbarOpen(false)}
+        >
           Model S
-        </Link>
-        <Link to="/model3" className="header-nav-links">
+        </NavLink>
+        <NavLink
+          to="/model3"
+          className="header-nav-links"
+          onClick={() => setNavbarOpen(false)}
+        >
           Model 3
-        </Link>
-        <Link to="/modelx" className="header-nav-links">
+        </NavLink>
+        <NavLink
+          to="/modelx"
+          className="header-nav-links"
+          onClick={() => setNavbarOpen(false)}
+        >
           Model X
-        </Link>
-        <Link to="/modely" className="header-nav-links">
+        </NavLink>
+        <NavLink
+          to="/modely"
+          className="header-nav-links"
+          onClick={() => setNavbarOpen(false)}
+        >
           Model Y
-        </Link>
-        <Link to="solarroofs" className="header-nav-links">
+        </NavLink>
+        <NavLink
+          to="solarroofs"
+          className="header-nav-links"
+          onClick={() => setNavbarOpen(false)}
+        >
           Solar Panels
-        </Link>
-        <Link to="solarpanels" className="header-nav-links">
+        </NavLink>
+        <NavLink
+          to="solarpanels"
+          className="header-nav-links"
+          onClick={() => setNavbarOpen(false)}
+        >
           Solar Roof
-        </Link>
+        </NavLink>
       </div>
       <div className="header-nav-menu">
-        <Link to="" className="header-nav-links">
-          Shop
-        </Link>
-        <Link to="" className="header-nav-links">
-          Account
-        </Link>
-        <Link to="" className="header-nav-links menu" onClick={handleToggle}>
+        <span className="header-nav-links">Shop</span>
+        <span className="header-nav-links">Account</span>
+        <span
+          className="header-nav-links menu"
+          onClick={() => setNavbarOpen(true)}
+        >
           Menu
-        </Link>
+        </span>
       </div>
-
-      <div className={`hidden-menu" ${navbarOpen ? "show" : ""}`}>
-        <button onClick={closeMenu}>close</button>
+      <div className={`hidden-menu ${navbarOpen ? "show" : ""}`}>
+        <div className="button-wrapper">
+          <img
+            className="close-button"
+            src="./img/x.png"
+            alt="close"
+            onClick={() => setNavbarOpen(false)}
+          />
+        </div>
         <ul>
           <li>
-            <Link className="hidden-menu-item" to="">
+            <NavLink className="header-nav-links" to="">
               Existing Inventory
-            </Link>
+            </NavLink>
           </li>
-
           <li>
-            <Link className="hidden-menu-item" to="">
+            <NavLink className="header-nav-links" to="">
               Used Inventory
-            </Link>
+            </NavLink>
           </li>
-
           <li>
-            <Link className="hidden-menu-item" to="">
+            <NavLink className="header-nav-links" to="">
               Trade-In
-            </Link>
+            </NavLink>
           </li>
-
           <li>
-            <Link className="hidden-menu-item" to="">
+            <NavLink className="header-nav-links" to="">
               Test Drive
-            </Link>
+            </NavLink>
           </li>
-
           <li>
-            <Link className="hidden-menu-item" to="">
-              Cybertruck
-            </Link>
-          </li>
-
-          <li>
-            <Link className="hidden-menu-item" to="">
-              Roadster
-            </Link>
-          </li>
-
-          <li>
-            <Link className="hidden-menu-item" to="">
-              Semi
-            </Link>
-          </li>
-
-          <li>
-            <Link className="hidden-menu-item" to="">
-              Charging
-            </Link>
-          </li>
-
-          <li>
-            <Link className="hidden-menu-item" to="">
+            <NavLink className="header-nav-links" to="">
               Powerwall
-            </Link>
+            </NavLink>
           </li>
-
           <li>
-            <Link className="hidden-menu-item" to="">
+            <NavLink className="header-nav-links" to="">
               Commercial Energy
-            </Link>
+            </NavLink>
           </li>
-
           <li>
-            <Link className="hidden-menu-item" to="">
+            <NavLink className="header-nav-links" to="">
               Utilities
-            </Link>
+            </NavLink>
           </li>
-
           <li>
-            <Link className="hidden-menu-item" to="">
+            <NavLink className="header-nav-links" to="">
+              Charging
+            </NavLink>
+          </li>
+          <li>
+            <NavLink className="header-nav-links" to="">
               Find Us
-            </Link>
+            </NavLink>
           </li>
-
           <li>
-            <Link className="hidden-menu-item" to="">
+            <NavLink className="header-nav-links" to="">
               Support
-            </Link>
+            </NavLink>
           </li>
-
           <li>
-            <Link className="hidden-menu-item" to="">
+            <NavLink className="header-nav-links" to="">
               Investor Relations
-            </Link>
+            </NavLink>
           </li>
+          <li>
+            <NavLink className="header-nav-links" to="">
+              Shop
+            </NavLink>
+          </li>
+          <li>
+            <NavLink className="header-nav-links" to="">
+              Account
+            </NavLink>
+          </li>
+          <li>
+            <NavLink className="header-nav-links" to="">
+              Model S
+            </NavLink>
+          </li>
+          <li>
+            <NavLink className="header-nav-links" to="">
+              Model 3
+            </NavLink>
+          </li>
+          <li>
+            <NavLink className="header-nav-links" to="">
+              Model X
+            </NavLink>
+          </li>
+          <li>
+            <NavLink className="header-nav-links" to="">
+              Model Y
+            </NavLink>
+          </li>
+          <li>
+            <NavLink className="header-nav-links" to="">
+              Solar Roof
+            </NavLink>
+          </li>
+          <li>
+            <NavLink className="header-nav-links" to="">
+              Solar Panels
+            </NavLink>
+          </li>
+          {/* <li><Link className="header-nav-links" to=''></Link></li> */}
         </ul>
       </div>
       <Outlet></Outlet>

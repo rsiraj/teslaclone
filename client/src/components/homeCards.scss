@@ -2,6 +2,10 @@
   font-family: "Sawarabi Gothic", sans-serif;
 }
 
+#hidden {
+  display: none;
+}
+
 .hero-card {
   height: 100vh;
   width: 100%;
@@ -21,6 +25,16 @@
   &.hero-card_4 {
     background-image: url("../../public/img/ModelX-Homepage-D.jpeg");
   }
+  &.hero-card_5 {
+    background-image: url("../../public/img/_25-HP-SolarPanels-D.jpeg");
+  }
+  &.hero-card_6 {
+    background-image: url("../../public/img/HP-SR-Design-D.jpeg");
+  }
+
+  &.hero-card_7 {
+    background-image: url("../../public/img/Desktop-Accessories.jpeg");
+  }
 
   & .chevron-down {
     background-color: transparent;
@@ -37,6 +51,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  align-content: center;
   padding: 100px;
 
   & h1 {
@@ -48,6 +63,60 @@
   }
 }
 
+.product-btn {
+  // position: absolute;
+  // bottom: 15%;
+  // right: 33%;
+  margin-top: 450px;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.button-group {
+  display: flex;
+  gap: 25px;
+}
+
+.custom-btn {
+  background-color: #343a40;
+
+  &:link,
+  &:visited {
+    color: #e9ecef;
+  }
+}
+
+.inventory-btn {
+  background-color: #e9ecef;
+
+  &:link,
+  &:visited {
+    color: #495057;
+  }
+}
+
+.custom-btn,
+.inventory-btn {
+  border-radius: 20px;
+  padding: 10px 64px;
+  text-decoration: none;
+}
+
+.link-description {
+  text-decoration: underline;
+  color: #000;
+
+  &:link,
+  &:visited {
+    color: #000;
+  }
+
+  &:active,
+  &:hover {
+    color: #000;
+  }
+}
+
 .animate-chevron_bounce {
   animation-duration: 2s;
   animation-iteration-count: infinite;
@@ -56,4 +125,19 @@
   &[role="button"] {
     cursor: pointer;
   }
+}
+
+@keyframes chevron_bounce {
+  from {
+    height: 0px;
+  }
+  to {
+    height: 500px;
+  }
+}
+
+.chevron-down {
+  position: absolute;
+  bottom: 5%;
+  right: 50%;
 }
