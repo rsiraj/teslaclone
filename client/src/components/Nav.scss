@@ -33,7 +33,7 @@
   font-family: "Sawarabi Gothic", sans-serif;
 }
 
-@media (max-width: 900px) {
+@media only screen and (max-width: 821px) {
   .header-nav {
     display: none;
   }

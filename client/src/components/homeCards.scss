@@ -137,3 +137,42 @@
   bottom: 5%;
   right: 50%;
 }
+
+@media only screen and (max-width: 821px) {
+  .hero-card {
+    height: 68vh;
+    width: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &.hero-card_1 {
+      background-image: url("../../public/img/M3-Homepage-D.jpeg");
+    }
+    &.hero-card_2 {
+      background-image: url("../../public/img/Desktop-ModelY.jpeg");
+    }
+    &.hero-card_3 {
+      background-image: url("../../public/img/ms-homepage-desktop.jpeg");
+    }
+    &.hero-card_4 {
+      background-image: url("../../public/img/ModelX-Homepage-D.jpeg");
+    }
+    &.hero-card_5 {
+      background-image: url("../../public/img/_25-HP-SolarPanels-D.jpeg");
+    }
+    &.hero-card_6 {
+      background-image: url("../../public/img/HP-SR-Design-D.jpeg");
+    }
+  
+    & .chevron-down {
+      background-color: transparent;
+      inline-size: 24px;
+      block-size: 24px;
+      max-inline-size: 100%;
+      min-block-size: 24px;
+      min-inline-size: 24px;
+      transition: fill 0.3s ease, stroke 0.3s ease;
+    }
+  }
+}
