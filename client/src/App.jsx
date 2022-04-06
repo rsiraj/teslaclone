@@ -14,10 +14,19 @@ import Footer from "./components/Footer";
 // import Footer from "./components/Footer";
 
 function App() {
-  const [data, setData] = useState([]);
+  const [landingData, setLandingData] = useState([]);
+  const [solar, setSolar] = useState([]);
+  const [carDataX, setCarDataX] = useState([]);
+
   useEffect(() => {
     Axios.get("http://127.0.0.1:8000").then((response) => {
-      setData(response.data);
+      setLandingData(response.data);
+    });
+    Axios.get("http://127.0.0.1:8000/solarroofs").then((response) => {
+      setSolar(response.data);
+    });
+    Axios.get("http://127.0.0.1:8000/modelx").then((response) => {
+      setCarDataX(response.data);
     });
   }, []);
 
@@ -25,13 +34,13 @@ function App() {
     <Router>
       <Nav />
       <Routes>
-        <Route path="/" element={<Landing data={data} />} />
-        <Route path="/models" element={<ModelS />} />
-        <Route path="/model3" element={<Model3 />} />
-        <Route path="/modelx" element={<ModelX />} />
-        <Route path="/modely" element={<ModelY />} />
-        <Route path="/solarroofs" element={<SolarRoof />} />
-        <Route path="/solarpanels" element={<SolarPanels />} />
+        <Route path="/" element={<Landing data={landingData} />} />
+        <Route path="/models" element={<ModelS data={carDataX} />} />
+        <Route path="/model3" element={<Model3 data={carDataX} />} />
+        <Route path="/modelx" element={<ModelX data={carDataX} />} />
+        <Route path="/modely" element={<ModelY data={carDataX} />} />
+        <Route path="/solarroofs" element={<SolarRoof data={solar} />} />
+        <Route path="/solarpanels" element={<SolarPanels data={solar} />} />
       </Routes>
       <Footer></Footer>
     </Router>
