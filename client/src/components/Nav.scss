@@ -39,6 +39,7 @@
   }
 }
 
+
 .header-nav-menu .header-nav-links {
   font-weight: 600;
   margin-right: 10px;
@@ -58,6 +59,7 @@
   text-decoration: none;
   color: black;
 }
+
 .button-wrapper {
   display: flex;
   justify-content: right;
@@ -85,4 +87,34 @@
 .show {
   transform: translateX(0);
   transition: 0.3s ease-in-out;
+}
+
+.close-button {
+  width: 15%;
+}
+
+@media (max-width: 821px) {
+  .header {
+    padding: 0px;
+  }
+  .header-nav {
+    display: none;
+  }
+  .header-nav-menu {
+    position: relative;
+    left: -50px;
+  }
+}
+
+@media (max-width: 500px) {
+  .header {
+    padding: 0px;
+  }
+  .header-nav {
+    display: none;
+  }
+  .header-nav-menu {
+    position: relative;
+    left: -20px;
+  }
 }
