@@ -31,6 +31,9 @@
   &.hero-card_6 {
     background-image: url("../../public/img/HP-SR-Design-D.jpeg");
   }
+  &.hero-card_7 {
+    background-image: url("../../public/img/Desktop-Accessories.jpeg");
+  }
 
   & .chevron-down {
     background-color: transparent;
@@ -167,7 +170,7 @@ span {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-  
+
     &.hero-card_1 {
       background-image: url("../../public/img/M3-Homepage-mobile.jpeg");
     }
@@ -186,7 +189,7 @@ span {
     &.hero-card_6 {
       background-image: url("../../public/img/HP-SR-Design-Mobile.jpeg");
     }
-  
+
     & .chevron-down {
       background-color: transparent;
       inline-size: 24px;
@@ -204,12 +207,12 @@ span {
     align-items: center;
     align-content: center;
     padding: 100px;
-  
+
     & h1 {
       font-size: 40px;
       white-space: nowrap;
     }
-  
+
     & p {
       font-size: inherit;
     }
@@ -245,6 +248,5 @@ span {
     width: 100%;
     text-align: center;
     white-space: nowrap;
-}
-
+  }
 }
