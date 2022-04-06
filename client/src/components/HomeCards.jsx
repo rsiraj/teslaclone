@@ -38,14 +38,24 @@ const HomeCards = ({ data }) => {
 
             <div
               className="product-btn "
-              id={`${!(item.id >= 5) ? "hidden" : ""}`}
+              id={`${!(item.id >= 5 && item.id < 7) ? "hidden" : ""}`}
             >
               <div className="button-group">
                 <a href={item.item_order_btn} className="custom-btn">
-                  Custom Order
+                  Order Now
                 </a>
                 <a href={item.item_inventory_btn} className="inventory-btn">
-                  Existing Inventory
+                  Learn More
+                </a>
+              </div>
+            </div>
+            <div
+              className="product-btn "
+              id={`${!(item.id === 7) ? "hidden" : ""}`}
+            >
+              <div className="button-group">
+                <a href={item.item_order_btn} className="custom-btn">
+                  Shop Now
                 </a>
               </div>
             </div>
