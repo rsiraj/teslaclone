@@ -4,7 +4,7 @@ import "./Footer.scss";
 
 const Footer = () => {
   return (
-    <div className="footer">
+    <section className="footer">
       <p className="footer-links">Tesla © 2022</p>
       <Link className="footer-links" to="">
         Privacy & Legal
@@ -27,7 +27,7 @@ const Footer = () => {
       <Link className="footer-links" to="">
         Location
       </Link>
-    </div>
+    </section>
   );
 };
 
