@@ -21,6 +21,12 @@
   &.hero-card_4 {
     background-image: url("../../public/img/ModelX-Homepage-D.jpeg");
   }
+  &.hero-card_5 {
+    background-image: url("../../public/img/_25-HP-SolarPanels-D.jpeg");
+  }
+  &.hero-card_6 {
+    background-image: url("../../public/img/HP-SR-Design-D.jpeg");
+  }
 
   & .chevron-down {
     background-color: transparent;
@@ -48,6 +54,21 @@
   }
 }
 
+.link-description {
+  text-decoration: underline;
+  color: #000;
+
+  &:link,
+  &:visited {
+    color: #000;
+  }
+
+  &:active,
+  &:hover {
+    color: #000;
+  }
+}
+
 .animate-chevron_bounce {
   animation-duration: 2s;
   animation-iteration-count: infinite;
@@ -56,4 +77,19 @@
   &[role="button"] {
     cursor: pointer;
   }
+}
+
+@keyframes chevron_bounce {
+  from {
+    height: 0px;
+  }
+  to {
+    height: 500px;
+  }
+}
+
+.chevron-down {
+  position: absolute;
+  bottom: 5%;
+  right: 50%;
 }
