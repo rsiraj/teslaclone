@@ -73,14 +73,8 @@ const Nav = () => {
           Menu
         </span>
       </div>
-<<<<<<< HEAD
-
-      <div className={`hidden-menu ${navbarOpen ? "show" : ""}`}>
-        <button onClick={closeMenu}>close</button>
-=======
       <div className={`hidden-menu ${navbarOpen ? "show" : ""}`}>
         <button onClick={() => setNavbarOpen(false)}>close</button>
->>>>>>> 7095f674c0a31efbbe8e2a76996a6d6c28282acd
         <ul>
           <li>
             <NavLink className="header-nav-links" to="">
