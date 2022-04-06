@@ -4,12 +4,6 @@ import "./Nav.scss";
 
 const Nav = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
-  const handleToggle = () => {
-    setNavbarOpen(!navbarOpen);
-  };
-  const closeMenu = () => {
-    setNavbarOpen(false);
-  };
   return (
     <div className="header">
       <NavLink to="/" onClick={() => setNavbarOpen(false)}>
