@@ -65,7 +65,13 @@ const Nav = () => {
       </div>
       <div className="header-nav-menu">
         <span className="header-nav-links">Shop</span>
-        <span className="header-nav-links">Account</span>
+        <NavLink 
+        to="/account"
+        className="header-nav-links"
+        onClick={() => setNavbarOpen(false)}
+        >
+          Account
+          </NavLink>
         <span
           className="header-nav-links menu"
           onClick={() => setNavbarOpen(true)}
