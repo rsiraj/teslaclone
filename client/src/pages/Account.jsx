@@ -2,9 +2,12 @@ import React from 'react'
 
 const Account = () => {
   return (
-    <div>
-        <h1 className='accountH1'>Sign In</h1>
-        <div></div>
+    <div className='signin'>
+        <div className='signin_header'>
+            <div className="sign_logo">
+                
+            </div>
+        </div>
     </div>
   )
 }
