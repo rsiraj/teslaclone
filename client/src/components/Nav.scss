@@ -65,7 +65,13 @@
   text-decoration: none;
   color: black;
 }
-
+.button-wrapper {
+  display: flex;
+  justify-content: right;
+}
+.close-button {
+  width: 30px;
+}
 .hidden-menu {
   position: fixed;
   top: 0;

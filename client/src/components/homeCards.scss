@@ -32,6 +32,10 @@
     background-image: url("../../public/img/HP-SR-Design-D.jpeg");
   }
 
+  &.hero-card_7 {
+    background-image: url("../../public/img/Desktop-Accessories.jpeg");
+  }
+
   & .chevron-down {
     background-color: transparent;
     inline-size: 24px;
@@ -60,10 +64,7 @@
 }
 
 .product-btn {
-  // position: absolute;
-  // bottom: 15%;
-  // right: 33%;
-  margin-top: 450px;
+  margin-top: 38%;
   text-transform: uppercase;
   font-size: 12px;
 }
