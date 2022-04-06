@@ -33,7 +33,7 @@ function App() {
         <Route path="/solarroofs" element={<SolarRoof />} />
         <Route path="/solarpanels" element={<SolarPanels />} />
       </Routes>
-      <Footer></Footer>
+      {/* <Footer></Footer> */}
     </Router>
   );
 }
