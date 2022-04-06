@@ -24,49 +24,49 @@ db.connect((err) => {
 });
 
 app.get("/", (req, res) => {
-  db.query("SELECT * FROM tesla_cars", (err, response) => {
+  db.query("SELECT * FROM tesla_landing", (err, response) => {
     if (err) res.json({ message: `https://http.cat/404` });
     res.status(200).json(response);
   });
 });
 
 app.get("/models", (req, res) => {
-  db.query("SELECT * FROM tesla_cars", (err, response) => {
+  db.query("SELECT * FROM tesla_landing", (err, response) => {
     if (err) res.json({ message: ` https://http.cat/404` });
     res.status(200).json(response);
   });
 });
 
 app.get("/model3", (req, res) => {
-  db.query("SELECT * FROM tesla_cars", (err, response) => {
+  db.query("SELECT * FROM tesla_landing", (err, response) => {
     if (err) res.json({ message: ` https://http.cat/404` });
     res.status(200).json(response);
   });
 });
 
 app.get("/modelx", (req, res) => {
-  db.query("SELECT * FROM tesla_cars", (err, response) => {
+  db.query("SELECT * FROM tesla_landing", (err, response) => {
     if (err) res.json({ message: ` https://http.cat/404` });
     res.status(200).json(response);
   });
 });
 
 app.get("/modely", (req, res) => {
-  db.query("SELECT * FROM tesla_cars", (err, response) => {
+  db.query("SELECT * FROM tesla_landing", (err, response) => {
     if (err) res.json({ message: ` https://http.cat/404` });
     res.status(200).json(response);
   });
 });
 
 app.get("/solarroof", (req, res) => {
-  db.query("SELECT * FROM tesla_cars", (err, response) => {
+  db.query("SELECT * FROM tesla_landing", (err, response) => {
     if (err) res.json({ message: ` https://http.cat/404` });
     res.status(200).json(response);
   });
 });
 
 app.get("/solarpanels", (req, res) => {
-  db.query("SELECT * FROM tesla_cars", (err, response) => {
+  db.query("SELECT * FROM tesla_landing", (err, response) => {
     if (err) res.json({ message: ` https://http.cat/404` });
     res.status(200).json(response);
   });
