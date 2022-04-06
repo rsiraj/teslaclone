@@ -26,7 +26,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Landing data={data} />} />
         <Route path="/models" element={<ModelS />} />
-        <Route path="/model3" element={<Model3 />} />
+        <Route path="/model3" element={<Model3 data={data} />} />
         <Route path="/modelx" element={<ModelX />} />
         <Route path="/modely" element={<ModelY />} />
         <Route path="/solarroofs" element={<SolarRoof />} />

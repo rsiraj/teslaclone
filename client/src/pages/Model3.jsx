@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
 
-const Model3 = () => {
+const Model3 = ({ data }) => {
   return (
-    <div>Model3</div>
-  )
-}
+    <></>
+    // {data.map(products => (
+    //   <img src={products.image} alt="" />
+    // ))}
+  );
+};
 
-export default Model3
+export default Model3;
