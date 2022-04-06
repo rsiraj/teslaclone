@@ -2,6 +2,10 @@
   font-family: "Sawarabi Gothic", sans-serif;
 }
 
+#hidden {
+  display: none;
+}
+
 .hero-card {
   height: 100vh;
   width: 100%;
@@ -28,6 +32,10 @@
     background-image: url("../../public/img/HP-SR-Design-D.jpeg");
   }
 
+  &.hero-card_7 {
+    background-image: url("../../public/img/Desktop-Accessories.jpeg");
+  }
+
   & .chevron-down {
     background-color: transparent;
     inline-size: 24px;
@@ -43,6 +51,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  align-content: center;
   padding: 100px;
 
   & h1 {
@@ -52,6 +61,42 @@
   & p {
     font-size: inherit;
   }
+}
+
+.product-btn {
+  margin-top: 38%;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.button-group {
+  display: flex;
+  gap: 25px;
+}
+
+.custom-btn {
+  background-color: #343a40;
+
+  &:link,
+  &:visited {
+    color: #e9ecef;
+  }
+}
+
+.inventory-btn {
+  background-color: #e9ecef;
+
+  &:link,
+  &:visited {
+    color: #495057;
+  }
+}
+
+.custom-btn,
+.inventory-btn {
+  border-radius: 20px;
+  padding: 10px 64px;
+  text-decoration: none;
 }
 
 .link-description {
