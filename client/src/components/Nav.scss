@@ -33,12 +33,6 @@
   font-family: "Sawarabi Gothic", sans-serif;
 }
 
-@media (max-width: 900px) {
-  .header-nav {
-    display: none;
-  }
-}
-
 // .header-nav-menu {
 //   display: flex;
 //   align-items: center;
@@ -65,13 +59,7 @@
   text-decoration: none;
   color: black;
 }
-.button-wrapper {
-  display: flex;
-  justify-content: right;
-}
-.close-button {
-  width: 30px;
-}
+
 .hidden-menu {
   position: fixed;
   top: 0;
@@ -91,4 +79,34 @@
 .show {
   transform: translateX(0);
   transition: 0.3s ease-in-out;
+}
+
+.close-button {
+  width: 15%;
+}
+
+@media (max-width: 821px) {
+  .header {
+    padding: 0px;
+  }
+  .header-nav {
+    display: none;
+  }
+  .header-nav-menu {
+    position: relative;
+    left: -50px;
+  }
+}
+
+@media (max-width: 500px) {
+  .header {
+    padding: 0px;
+  }
+  .header-nav {
+    display: none;
+  }
+  .header-nav-menu {
+    position: relative;
+    left: -20px;
+  }
 }

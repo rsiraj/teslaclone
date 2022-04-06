@@ -31,7 +31,6 @@
   &.hero-card_6 {
     background-image: url("../../public/img/HP-SR-Design-D.jpeg");
   }
-
   &.hero-card_7 {
     background-image: url("../../public/img/Desktop-Accessories.jpeg");
   }
@@ -63,8 +62,22 @@
   }
 }
 
+.hero-text {
+  border-radius: 20px;
+  padding: 4px 64px;
+  text-align: center;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+span {
+  display: inline-block;
+}
+
 .product-btn {
-  margin-top: 38%;
+  position: relative;
+  top: -100px;
+  margin-top: 450px;
   text-transform: uppercase;
   font-size: 12px;
 }
@@ -102,6 +115,7 @@
 .link-description {
   text-decoration: underline;
   color: #000;
+  display: inline-block;
 
   &:link,
   &:visited {
@@ -137,4 +151,102 @@
   position: absolute;
   bottom: 5%;
   right: 50%;
+}
+
+@media only screen and (max-width: 821px) {
+  .product-btn {
+    position: relative;
+    top: 256px;
+    margin-top: 450px;
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .hero-card {
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &.hero-card_1 {
+      background-image: url("../../public/img/M3-Homepage-mobile.jpeg");
+    }
+    &.hero-card_2 {
+      background-image: url("../../public/img/Mobile-ModelY.jpeg");
+    }
+    &.hero-card_3 {
+      background-image: url("../../public/img/ms-homepage-mobile.jpeg");
+    }
+    &.hero-card_4 {
+      background-image: url("../../public/img/ModelX-Homepage-mobile.jpeg");
+    }
+    &.hero-card_5 {
+      background-image: url("../../public/img/_25-HP-SolarPanels-mobile.jpeg");
+    }
+    &.hero-card_6 {
+      background-image: url("../../public/img/HP-SR-Design-Mobile.jpeg");
+    }
+
+    & .chevron-down {
+      background-color: transparent;
+      inline-size: 24px;
+      block-size: 24px;
+      max-inline-size: 100%;
+      min-block-size: 24px;
+      min-inline-size: 24px;
+      transition: fill 0.3s ease, stroke 0.3s ease;
+    }
+  }
+
+  .hero-card_description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    padding: 100px;
+
+    & h1 {
+      font-size: 40px;
+      white-space: nowrap;
+    }
+
+    & p {
+      font-size: inherit;
+    }
+  }
+
+  .product-btn {
+    position: relative;
+    top: 50px;
+    margin-top: 450px;
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+
+  .button-group {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: space-evenly;
+    gap: 10px;
+    position: relative;
+    top: -220px;
+    z-index: 2;
+  }
+
+  .custom-btn,
+  .inventory-btn {
+    display: inline-block;
+    border-radius: 20px;
+    text-decoration: none;
+    padding: 10px 100px;
+    width: 100%;
+    text-align: center;
+    white-space: nowrap;
+  }
 }
