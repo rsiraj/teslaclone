@@ -21,6 +21,20 @@ const HomeCards = ({ data }) => {
                 </span>
               </a>
             </div>
+
+            <div
+              className="product-btn "
+              id={`${item.id >= 5 ? "hidden" : ""}`}
+            >
+              <div className="button-group">
+                <a href="#" className="custom-btn">
+                  Custom Order
+                </a>
+                <a href="#" className="inventory-btn">
+                  Existing Inventory
+                </a>
+              </div>
+            </div>
           </div>
 
           <a href="#scrolled">
