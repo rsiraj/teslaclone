@@ -10,6 +10,7 @@ import ModelY from "./pages/ModelY";
 import SolarRoof from "./pages/SolarRoof";
 import SolarPanels from "./pages/SolarPanels";
 import Nav from "./components/Nav";
+import Footer from "./components/Footer";
 // import Footer from "./components/Footer";
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
         <Route path="/solarroofs" element={<SolarRoof />} />
         <Route path="/solarpanels" element={<SolarPanels />} />
       </Routes>
+      <Footer></Footer>
     </Router>
   );
 }
