@@ -1,9 +1,8 @@
-import React from 'react'
+import React from "react";
+import Solar from "../components/Solar";
 
-const SolarRoof = () => {
-  return (
-    <div>SolarRoof</div>
-  )
-}
+const SolarRoof = ({ data }) => {
+  return <Solar data={data} />;
+};
 
-export default SolarRoof
+export default SolarRoof;

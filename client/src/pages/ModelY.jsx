@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
-const ModelY = () => {
-  return (
-    <div>ModelY</div>
-  )
-}
+const ModelY = ({ data }) => {
+  return <div>ModelY data={data}</div>;
+};
 
-export default ModelY
+export default ModelY;

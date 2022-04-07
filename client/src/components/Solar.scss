@@ -1,0 +1,16 @@
+* {
+  font-family: "Sawarabi Gothic", sans-serif;
+}
+
+.solar {
+  display: grid;
+  max-width: 100vw;
+}
+
+.solar-hero-wrapper {
+  display: grid;
+  width: 100vw;
+  &.solar-hero {
+    display: block;
+  }
+}

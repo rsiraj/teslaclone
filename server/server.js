@@ -1,6 +1,7 @@
 const express = require("express");
 const mysql = require("mysql");
 const cors = require("cors");
+const bodyParser = require("body-parser");
 require("dotenv").config();
 
 const app = express();
@@ -9,6 +10,7 @@ const SQL_PASSWORD = process.env.SQL_PASSWORD;
 
 app.use(express.json());
 app.use(cors());
+app.use(bodyParser.urlencoded({ extended: true }));
 
 const db = mysql.createConnection({
   host: "tesla-clone.ctul2xxq1xtc.us-east-2.rds.amazonaws.com",
@@ -31,44 +33,57 @@ app.get("/", (req, res) => {
 });
 
 app.get("/models", (req, res) => {
-  db.query("SELECT * FROM tesla_landing", (err, response) => {
+  db.query("SELECT * FROM tesla_products", (err, response) => {
     if (err) res.json({ message: ` https://http.cat/404` });
     res.status(200).json(response);
   });
 });
 
 app.get("/model3", (req, res) => {
-  db.query("SELECT * FROM tesla_landing", (err, response) => {
+  db.query("SELECT * FROM tesla_products", (err, response) => {
     if (err) res.json({ message: ` https://http.cat/404` });
     res.status(200).json(response);
   });
 });
 
 app.get("/modelx", (req, res) => {
-  db.query("SELECT * FROM tesla_landing", (err, response) => {
+  db.query("SELECT * FROM tesla_products", (err, response) => {
     if (err) res.json({ message: ` https://http.cat/404` });
     res.status(200).json(response);
   });
 });
 
 app.get("/modely", (req, res) => {
-  db.query("SELECT * FROM tesla_landing", (err, response) => {
+  db.query("SELECT * FROM tesla_products", (err, response) => {
     if (err) res.json({ message: ` https://http.cat/404` });
     res.status(200).json(response);
   });
 });
 
-app.get("/solarroof", (req, res) => {
-  db.query("SELECT * FROM tesla_landing", (err, response) => {
+app.get("/solarroofs", (req, res) => {
+  db.query("SELECT * FROM tesla_solar", (err, response) => {
     if (err) res.json({ message: ` https://http.cat/404` });
     res.status(200).json(response);
   });
 });
 
 app.get("/solarpanels", (req, res) => {
-  db.query("SELECT * FROM tesla_landing", (err, response) => {
+  db.query("SELECT * FROM tesla_solar", (err, response) => {
     if (err) res.json({ message: ` https://http.cat/404` });
     res.status(200).json(response);
+  });
+});
+
+app.get("/signin", (req, res) => {
+  db.query("SELECT * FROM tesla_contact", (err, response) => {
+    if (err) res.json({ message: ` https://http.cat/404` });
+    res.status(200).json(response);
+  });
+});
+
+app.post("/signin", (req, res) => {
+  db.query("SELECT * FROM tesla_contact", (err, response) => {
+    if (err) res.json({ message: ` https://http.cat/404` });
   });
 });
 
