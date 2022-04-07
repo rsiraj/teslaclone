@@ -33,12 +33,12 @@
   font-family: "Sawarabi Gothic", sans-serif;
 }
 
-@media (max-width: 900px) {
-  .header-nav {
-    display: none;
-  }
-}
-
+// .header-nav-menu {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   flex: 1;
+// }
 
 .header-nav-menu .header-nav-links {
   font-weight: 600;
@@ -60,14 +60,6 @@
   color: black;
 }
 
-.button-wrapper {
-  display: flex;
-  justify-content: right;
-}
-.close-button {
-  width: 30px;
-  cursor: pointer;
-}
 .hidden-menu {
   position: fixed;
   top: 0;
