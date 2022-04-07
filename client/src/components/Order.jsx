@@ -5,6 +5,7 @@ const Order = () => {
   return (
     <div className="order-section">
       <div className="order-buttons">
+        <h1 className="order-section-title">Experience this Tesla!</h1>
         <button className="order-now-button">Order Now</button>
         <button className="compare-button">Compare</button>
       </div>
