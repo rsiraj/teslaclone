@@ -3,7 +3,7 @@ import "./Order.scss";
 
 const Order = () => {
   return (
-    <div className="order-section">
+    <section className="order-section">
       <div className="order-buttons">
         <h1 className="order-section-title">Experience this Tesla!</h1>
         <button className="order-now-button">Order Now</button>
@@ -15,7 +15,7 @@ const Order = () => {
           alt=""
         />
       </div>
-    </div>
+    </section>
   );
 };
 

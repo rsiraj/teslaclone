@@ -3,9 +3,9 @@ import "./CarHero.scss";
 const CarHero = ({ data }) => {
   console.log(data);
   return (
-    <div>
+    <>
       {data.map((item) => (
-        <div className={`car-hero-image hero_img_${item.id}`}>
+        <section className={`car-hero-image hero_img_${item.id}`}>
           <div className="car-hero-text-container">
             <h1 className="car-hero-title">{item.hero_title1}</h1>
             <p className="car-hero-subtitle">{item.hero_subtitle1}</p>
@@ -29,9 +29,9 @@ const CarHero = ({ data }) => {
             </div>
             <button className="car-feature-button">Order Now</button>
           </div>
-        </div>
+        </section>
       ))}
-    </div>
+    </>
   );
 };
 
