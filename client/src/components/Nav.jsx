@@ -78,97 +78,173 @@ const Nav = () => {
         </div>
         <ul>
           <li>
-            <NavLink className="header-nav-links" to="">
+            <NavLink
+              className="header-nav-links"
+              to=""
+              onClick={() => setNavbarOpen(false)}
+            >
               Existing Inventory
             </NavLink>
           </li>
           <li>
-            <NavLink className="header-nav-links" to="">
+            <NavLink
+              className="header-nav-links"
+              to=""
+              onClick={() => setNavbarOpen(false)}
+            >
               Used Inventory
             </NavLink>
           </li>
           <li>
-            <NavLink className="header-nav-links" to="">
+            <NavLink
+              className="header-nav-links"
+              to=""
+              onClick={() => setNavbarOpen(false)}
+            >
               Trade-In
             </NavLink>
           </li>
           <li>
-            <NavLink className="header-nav-links" to="">
+            <NavLink
+              className="header-nav-links"
+              to=""
+              onClick={() => setNavbarOpen(false)}
+            >
               Test Drive
             </NavLink>
           </li>
           <li>
-            <NavLink className="header-nav-links" to="">
+            <NavLink
+              className="header-nav-links"
+              to=""
+              onClick={() => setNavbarOpen(false)}
+            >
               Powerwall
             </NavLink>
           </li>
           <li>
-            <NavLink className="header-nav-links" to="">
+            <NavLink
+              className="header-nav-links"
+              to=""
+              onClick={() => setNavbarOpen(false)}
+            >
               Commercial Energy
             </NavLink>
           </li>
           <li>
-            <NavLink className="header-nav-links" to="">
+            <NavLink
+              className="header-nav-links"
+              to=""
+              onClick={() => setNavbarOpen(false)}
+            >
               Utilities
             </NavLink>
           </li>
           <li>
-            <NavLink className="header-nav-links" to="">
+            <NavLink
+              className="header-nav-links"
+              to=""
+              onClick={() => setNavbarOpen(false)}
+            >
               Charging
             </NavLink>
           </li>
           <li>
-            <NavLink className="header-nav-links" to="">
+            <NavLink
+              className="header-nav-links"
+              to=""
+              onClick={() => setNavbarOpen(false)}
+            >
               Find Us
             </NavLink>
           </li>
           <li>
-            <NavLink className="header-nav-links" to="">
+            <NavLink
+              className="header-nav-links"
+              to=""
+              onClick={() => setNavbarOpen(false)}
+            >
               Support
             </NavLink>
           </li>
           <li>
-            <NavLink className="header-nav-links" to="">
+            <NavLink
+              className="header-nav-links"
+              to=""
+              onClick={() => setNavbarOpen(false)}
+            >
               Investor Relations
             </NavLink>
           </li>
           <li>
-            <NavLink className="header-nav-links" to="">
+            <NavLink
+              className="header-nav-links"
+              to=""
+              onClick={() => setNavbarOpen(false)}
+            >
               Shop
             </NavLink>
           </li>
           <li>
-            <NavLink className="header-nav-links" to="">
+            <NavLink
+              className="header-nav-links"
+              to=""
+              onClick={() => setNavbarOpen(false)}
+            >
               Account
             </NavLink>
           </li>
           <li>
-            <NavLink className="header-nav-links" to="">
+            <NavLink
+              className="header-nav-links"
+              to="/models"
+              onClick={() => setNavbarOpen(false)}
+            >
               Model S
             </NavLink>
           </li>
           <li>
-            <NavLink className="header-nav-links" to="">
+            <NavLink
+              className="header-nav-links"
+              to="/model3"
+              onClick={() => setNavbarOpen(false)}
+            >
               Model 3
             </NavLink>
           </li>
           <li>
-            <NavLink className="header-nav-links" to="">
+            <NavLink
+              className="header-nav-links"
+              to="/modelx"
+              onClick={() => setNavbarOpen(false)}
+            >
               Model X
             </NavLink>
           </li>
           <li>
-            <NavLink className="header-nav-links" to="">
+            <NavLink
+              className="header-nav-links"
+              to="/modely"
+              onClick={() => setNavbarOpen(false)}
+            >
               Model Y
             </NavLink>
           </li>
           <li>
-            <NavLink className="header-nav-links" to="">
+            <NavLink
+              className="header-nav-links"
+              to="/solarroofs"
+              onClick={() => setNavbarOpen(false)}
+            >
               Solar Roof
             </NavLink>
           </li>
           <li>
-            <NavLink className="header-nav-links" to="">
+            <NavLink
+              className="header-nav-links"
+              to="/solarpanels"
+              onClick={() => setNavbarOpen(false)}
+            >
               Solar Panels
             </NavLink>
           </li>
