@@ -33,12 +33,12 @@
   font-family: "Sawarabi Gothic", sans-serif;
 }
 
-@media (max-width: 900px) {
-  .header-nav {
-    display: none;
-  }
-}
-
+// .header-nav-menu {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   flex: 1;
+// }
 
 .header-nav-menu .header-nav-links {
   font-weight: 600;
@@ -60,14 +60,6 @@
   color: black;
 }
 
-.button-wrapper {
-  display: flex;
-  justify-content: right;
-}
-.close-button {
-  width: 30px;
-  cursor: pointer;
-}
 .hidden-menu {
   position: fixed;
   top: 0;
@@ -75,10 +67,13 @@
   right: 0;
   background: white;
   width: 300px;
+  height: 100%;
   transform: translateX(100%);
   z-index: 10;
   padding: 20px;
   transition: 0.3s ease-in-out;
+  overflow-y: hidden;
+  overflow: scroll;
 }
 .hidden-menu ul li {
   list-style: none;
