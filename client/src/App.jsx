@@ -44,7 +44,7 @@ function App() {
         <Route path="/solarpanels" element={<SolarPanels data={solar} />} />
         <Route path="/account" element={<Account />} />
       </Routes>
-      {/* <Footer></Footer> */}
+      <Footer></Footer>
     </Router>
   );
 }
