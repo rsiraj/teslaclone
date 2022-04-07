@@ -4,13 +4,31 @@ import "./Solar.scss";
 const Solar = ({ data }) => {
   const location = useLocation();
   const getPath = () => {
-    if (location.pathname === "/solarpanels") {
-      return "./img/sr-storm-desktop.png";
-    }
     if (location.pathname === "/solarroofs") {
-      return "./img/_25-Hero-D.jpeg";
+      return data[0].hero_img1;
+    }
+    if (location.pathname === "/solarpanels") {
+      return data[0].hero_img2;
     }
   };
+
+  const setTitle = () => {
+    if (location.pathname === "/solarroofs") {
+      return data[0].hero_title1;
+    }
+    if (location.pathname === "/solarpanels") {
+      return data[0].hero_title2;
+    }
+  };
+  const setSubtitle = () => {
+    if (location.pathname === "/solarroofs") {
+      return data[0].hero_subtitle1;
+    }
+    if (location.pathname === "/solarpanels") {
+      return data[0].hero_subtitle2;
+    }
+  };
+
   console.log(data);
   return (
     <div>
@@ -20,8 +38,8 @@ const Solar = ({ data }) => {
             <div className="solar-hero-wrapper">
               <img className="solar-hero" src={getPath()} alt="img" />
             </div>
-            <h1 className="hero-title">{item.title1}</h1>
-            <p className="hero-subtitle">{item.hero_subtitle1}</p>
+            <h1 className="hero-title">{setTitle()}</h1>
+            <p className="hero-subtitle">{setSubtitle()}</p>
           </section>
           <section className="solar-sleek">
             <div>
