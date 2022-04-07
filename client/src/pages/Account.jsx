@@ -1,22 +1,12 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react'
+import Login from '../components/Login'
 
 const Account = () => {
   return (
-    <div className="signin">
-      <div className="signin_header">
-        <div className="sign_logo">
-          {/* <Link>
-            <img
-              src="./img/tesla-logo-header.png"
-              alt="tesla"
-              className="header-logo"
-            />
-          </Link> */}
-        </div>
-      </div>
+    <div>
+        <Login />
     </div>
-  );
-};
+  )
+}
 
-export default Account;
+export default Account
