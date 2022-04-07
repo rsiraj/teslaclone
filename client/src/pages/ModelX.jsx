@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
-const ModelX = () => {
-  return (
-    <div>ModelX</div>
-  )
-}
+const ModelX = ({ data }) => {
+  return <div>ModelX data={data}</div>;
+};
 
-export default ModelX
+export default ModelX;

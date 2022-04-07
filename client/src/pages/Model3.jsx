@@ -1,11 +1,11 @@
 import React from "react";
+import CarHero from "../components/CarHero";
 
 const Model3 = ({ data }) => {
   return (
-    <></>
-    // {data.map(products => (
-    //   <img src={products.image} alt="" />
-    // ))}
+    <div>
+      <CarHero data={data} />
+    </div>
   );
 };
 

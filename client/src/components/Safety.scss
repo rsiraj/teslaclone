@@ -1,3 +1,38 @@
 * {
     font-family: "Sawarabi Gothic", sans-serif;
 }
+
+
+
+.safety-container {
+    display: flex;
+    margin: 2rem;
+
+    .safety-container-leftSide {
+        flex: 20%;
+        margin: 2rem;
+
+
+        .safety-subtitle {
+            font-size: 1.5rem;
+            font-weight: thin;
+        }
+
+        .safety-title {
+            font-size: 2.5rem;
+        }
+
+        .safety-description {
+            font-size: 1.2rem;
+            margin-top: 2rem;
+        }
+    }
+
+    .safety-container-rightSide {
+        flex: 80%;
+    }
+
+    .safety-image {
+        width: 100%;
+    }
+}

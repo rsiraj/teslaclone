@@ -5,7 +5,6 @@ const Landing = ({ data }) => {
   return (
     <>
       <HomeCards data={data} />
-      {/* <Footer /> */}
     </>
   );
 };

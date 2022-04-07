@@ -1,12 +1,14 @@
 import React from "react";
 import CarHero from "../components/CarHero";
+import Order from "../components/Order";
 import Safety from "../components/Safety";
 
-const ModelS = () => {
+const ModelS = ({ data }) => {
   return (
     <div>
-      <CarHero />
-      <Safety />
+      <CarHero data={data} />
+      <Safety data={data} />
+      <Order />
     </div>
   );
 };

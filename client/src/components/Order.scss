@@ -1,0 +1,39 @@
+.order-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: black;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.order-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // text-align: center;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.order-now-button,
+.compare-button {
+    background: transparent;
+    padding: .7rem 4rem;
+    text-transform: uppercase;
+    color: white;
+    border: 5px solid white;
+    border-radius: 2rem;
+    margin: .5rem;
+    text-align: center;
+}
+
+.order-now-button {}
+
+.compare-button {}
+
+
+.order-image-section img {
+    width: 100%;
+}
