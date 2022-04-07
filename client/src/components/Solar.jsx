@@ -3,10 +3,11 @@ import { useLocation } from "react-router-dom";
 // import { useLocation } from "react-router";
 import "./Solar.scss";
 
-const Solar = ({ data }, props) => {
+const Solar = ({ data }) => {
+  const location = useLocation();
   let [roofOrPanel, setRoofOrPanel] = useState(true);
 
-  console.log(props.location);
+  console.log(location.pathname);
 
   return (
     <div>
