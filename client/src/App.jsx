@@ -11,6 +11,7 @@ import SolarRoof from "./pages/SolarRoof";
 import SolarPanels from "./pages/SolarPanels";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
+import Account from "./pages/Account";
 // import Footer from "./components/Footer";
 
 function App() {
@@ -41,6 +42,7 @@ function App() {
         <Route path="/modely" element={<ModelY data={carDataX} />} />
         <Route path="/solarroofs" element={<SolarRoof data={solar} />} />
         <Route path="/solarpanels" element={<SolarPanels data={solar} />} />
+        <Route path="/account" element={<Account />} />
       </Routes>
       <Footer></Footer>
     </Router>
