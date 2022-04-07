@@ -31,7 +31,7 @@ const Solar = ({ data }) => {
 
   console.log(data);
   return (
-    <div>
+    <>
       {data.map((item) => (
         <section className="solar" key={item.id}>
           <section>
@@ -95,7 +95,7 @@ const Solar = ({ data }) => {
           </section>
         </section>
       ))}
-    </div>
+    </>
   );
 };
 
