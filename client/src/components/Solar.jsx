@@ -1,25 +1,24 @@
-import React, { useState } from "react";
 import { useLocation } from "react-router-dom";
-// import { useLocation } from "react-router";
 import "./Solar.scss";
 
 const Solar = ({ data }) => {
   const location = useLocation();
-  let [roofOrPanel, setRoofOrPanel] = useState(true);
-
-  console.log(location.pathname);
-
+  const getPath = () => {
+    if (location.pathname === "/solarpanels") {
+      return "./img/sr-storm-desktop.png";
+    }
+    if (location.pathname === "/solarroofs") {
+      return "./img/_25-Hero-D.jpeg";
+    }
+  };
+  console.log(data);
   return (
     <div>
       {data.map((item) => (
         <section className="solar" key={item.id}>
           <section>
             <div className="solar-hero-wrapper">
-              <img
-                className="solar-hero"
-                src={roofOrPanel ? item.hero_img1 : item.hero_img2}
-                alt="img"
-              />
+              <img className="solar-hero" src={getPath()} alt="img" />
             </div>
             <h1 className="hero-title">{item.title1}</h1>
             <p className="hero-subtitle">{item.hero_subtitle1}</p>
