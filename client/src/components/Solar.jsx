@@ -38,59 +38,68 @@ const Solar = ({ data }) => {
             <div className="solar-hero-wrapper">
               <img className="solar-hero" src={getPath()} alt="img" />
             </div>
-            <h1 className="hero-title">{setTitle()}</h1>
-            <p className="hero-subtitle">{setSubtitle()}</p>
-          </section>
-          <section className="solar-sleek">
-            <div>
-              <section className="sleek-details">
-                <span>
-                  <span className="sleek-subtitle">{item.sleek_subtitle}</span>
-                  <span className="sleek-title">{item.sleek_title}</span>
-                </span>
-                <section className="sleek-description">
-                  <p>{item.sleek_description}</p>
-                </section>
-              </section>
-              <div>
-                <img src={item.sleek_img} alt="solar panel" />
-              </div>
+            <div className="solar-hero-details">
+              <h1 className="solar-hero-title">{setTitle()}</h1>
+              <p className="solar-hero-subtitle">{setSubtitle()}</p>
             </div>
           </section>
-          <section className="solar-production">
-            <div>
-              <section className="production-details">
-                <span>
-                  <span className="production-subtitle">
-                    {item.production_subtitle}
-                  </span>
-                  <span className="production-title">
-                    {item.production_title}
-                  </span>
+          <section className="solar-cards">
+            <section className="solar-card-details">
+              <span className="solar-card-header">
+                <span className="solar-card-subtitle">
+                  {item.sleek_subtitle}
                 </span>
-                <section className="production-description">
-                  <p>{item.production_description}</p>
-                </section>
+                <span className="solar-card-title">{item.sleek_title}</span>
+              </span>
+              <section className="solar-card-description">
+                <p>{item.sleek_description}</p>
               </section>
-              <div>
-                <img src={item.production_img} alt="solar panel" />
+              <div className="orderNow-button">
+                <span>Order Now</span>
               </div>
+            </section>
+            <div className="solar-img">
+              <img src={item.sleek_img} alt="solar panel" />
             </div>
           </section>
-          <section className="solar-value">
-            <div>
-              <section className="value-details">
-                <span>
-                  <span className="value-subtitle">{item.value_subtitle}</span>
-                  <span className="value-title">{item.value_title}</span>
+          <section className="solar-cards">
+            <section className="solar-card-details">
+              <span className="solar-card-header">
+                <span className="solar-card-subtitle">
+                  {item.production_subtitle}
                 </span>
-                <section className="value-description">
-                  <p>{item.value_description}</p>
-                </section>
+                <span className="solar-card-title">
+                  {item.production_title}
+                </span>
+              </span>
+              <section className="solar-card-description">
+                <p>{item.production_description}</p>
               </section>
-              <div>
-                <img src={item.value_img} alt="solar panel" />
+              <div className="orderNow-button">
+                <span>Order Now</span>
               </div>
+            </section>
+            <div className="solar-img">
+              <img src={item.production_img} alt="solar panel" />
+            </div>
+          </section>
+          <section className="solar-cards">
+            <section className="solar-card-details">
+              <span className="solar-card-header">
+                <span className="solar-card-subtitle">
+                  {item.value_subtitle}
+                </span>
+                <span className="solar-card-title">{item.value_title}</span>
+              </span>
+              <section className="solar-card-description">
+                <p>{item.value_description}</p>
+              </section>
+              <div className="orderNow-button">
+                <span>Order Now</span>
+              </div>
+            </section>
+            <div className="solar-img">
+              <img src={item.value_img} alt="solar panel" />
             </div>
           </section>
         </section>
