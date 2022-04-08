@@ -28,6 +28,13 @@ const Solar = ({ data }) => {
       return data[0].hero_subtitle2;
     }
   };
+  const setFont = () => {
+    if (location.pathname === "/solarroofs") {
+      return "font-white";
+    } else {
+      return "";
+    }
+  };
 
   console.log(data);
   return (
@@ -38,7 +45,7 @@ const Solar = ({ data }) => {
             <div className="solar-hero-wrapper">
               <img className="solar-hero" src={getPath()} alt="img" />
             </div>
-            <div className="solar-hero-details">
+            <div className={`solar-hero-details ${setFont()}`}>
               <h1 className="solar-hero-title">{setTitle()}</h1>
               <p className="solar-hero-subtitle">{setSubtitle()}</p>
             </div>

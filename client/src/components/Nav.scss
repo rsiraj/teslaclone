@@ -1,6 +1,6 @@
 .header {
   min-height: 60px;
-  position: fixed;
+  position: absolute;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -16,6 +16,13 @@
 
 .header-logo {
   width: 10em;
+  padding: 0;
+
+  margin-top: 1em;
+}
+.background-white {
+  border-radius: 20px;
+  background-color: white;
 }
 
 .header-nav {
@@ -31,6 +38,7 @@
   flex-wrap: nowrap;
   color: black;
   font-family: "Sawarabi Gothic", sans-serif;
+  text-decoration: none;
 }
 
 // .header-nav-menu {
@@ -45,6 +53,9 @@
   margin-right: 10px;
   color: black;
 }
+.font-white .header-nav-links {
+  color: white;
+}
 :hover.header-nav-links {
   background-color: #90909054;
   border-radius: 10px;
@@ -55,7 +66,7 @@
   cursor: pointer;
 }
 
-.header-nav-links {
+.hidden-menu .header-nav-links {
   text-decoration: none;
   color: black;
 }

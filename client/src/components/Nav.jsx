@@ -1,19 +1,38 @@
 import React, { useState } from "react";
-import { NavLink, Outlet } from "react-router-dom";
+import { NavLink, Outlet, useLocation } from "react-router-dom";
 import "./Nav.scss";
 
 const Nav = () => {
+  const location = useLocation();
+  const setFont = () => {
+    if (location.pathname === "/solarroofs") {
+      return "font-white";
+    } else {
+      return "";
+    }
+  };
+  const setBackground = () => {
+    if (location.pathname === "/solarroofs") {
+      return "background-white";
+    } else {
+      return "";
+    }
+  };
   const [navbarOpen, setNavbarOpen] = useState(false);
   return (
     <div className="header">
-      <NavLink to="/" onClick={() => setNavbarOpen(false)}>
+      <NavLink
+        className="header-logo-wrapper"
+        to="/"
+        onClick={() => setNavbarOpen(false)}
+      >
         <img
           src="./img/tesla-logo-header.png"
           alt="tesla"
-          className="header-logo"
+          className={`header-logo ${setBackground()}`}
         />
       </NavLink>
-      <div className="header-nav">
+      <div className={`header-nav ${setFont()}`}>
         <NavLink
           to="/models"
           className="header-nav-links"
@@ -57,7 +76,7 @@ const Nav = () => {
           Solar Roof
         </NavLink>
       </div>
-      <div className="header-nav-menu">
+      <div className={`header-nav-menu ${setFont()} `}>
         <span className="header-nav-links">Shop</span>
         <NavLink 
         to="/account"
