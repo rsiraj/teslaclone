@@ -1,7 +1,7 @@
 .order-section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    // grid-template-rows: repeat(2, 1fr);
+    // grid-template-rows: 1rem 2fr;
     background-color: black;
     height: 100vh;
     justify-content: center;
@@ -12,11 +12,14 @@
 .order-section-title {
     color: white;
     margin: 2rem;
+    text-align: center;
+    // grid-column: 1/ span 2;
     // grid-column: span 2;
 }
 
 .order-buttons {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     justify-content: center;
     align-items: center;
     // text-align: center;
@@ -37,11 +40,16 @@
     text-align: center;
 }
 
-// .order-now-button {}
-
-// .compare-button {}
-
-
 .order-image-section img {
     width: 100%;
+}
+
+@media screen and (max-width: 900px) {
+    .order-section {
+        grid-template-columns: 1fr;
+    }
+
+    .order-buttons {
+        grid-template-columns: 1fr;
+    }
 }
