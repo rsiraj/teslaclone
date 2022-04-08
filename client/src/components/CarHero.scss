@@ -4,11 +4,11 @@
 
 .car-hero-image {
     height: 100vh;
-    width: 100%e;
+    width: 100vw;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
+    // position: relative;
 
     &.hero_img_1 {
         background-image: url('../../public/img/ms-main-hero-desktop.jpeg');
