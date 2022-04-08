@@ -11,7 +11,7 @@ function Login() {
 //   };
 
   return (
-    <div className="signin">
+    <section className="signin">
       <div className="signin_header">
         <div className="signin_logo"></div>
         <div className="signin_language"></div>
@@ -54,7 +54,7 @@ function Login() {
           </button>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
