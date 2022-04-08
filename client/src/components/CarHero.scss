@@ -86,3 +86,20 @@
 .car-hero-features-title {
     font-size: .7rem;
 }
+
+
+@media screen and (max-width:900px) {
+    .car-hero-feature-container {
+        flex-wrap: wrap;
+        top: 80%;
+    }
+
+    .car-hero-features-data {
+        font-size: 1rem;
+    }
+
+    .car-feature-button {
+        font-size: .5rem;
+        margin-top: 1rem;
+    }
+}
