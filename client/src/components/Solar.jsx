@@ -109,6 +109,18 @@ const Solar = ({ data }) => {
               <img src={item.value_img} alt="solar panel" />
             </div>
           </section>
+          <section className="order-card-wrapper">
+            <section className="order-card-content">
+              <div className="order-card-details">
+                <span className="order-title">{item.order_title}</span>
+                <p className="order-subtitle">{item.order_subtitle}</p>
+              </div>
+              <div className="order-card-buttons">
+                <span className="order-button">Order Now</span>
+                <span className="order-button">Chat with Energy Advisor</span>
+              </div>
+            </section>
+          </section>
         </section>
       ))}
     </>

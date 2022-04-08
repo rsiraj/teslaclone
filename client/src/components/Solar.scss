@@ -82,5 +82,99 @@
   display: block;
   width: 100%;
   height: 100vh;
-  object-fit: contain;
+  object-fit: cover;
 }
+
+
+@media only screen and (max-width: 821px) {
+  .solar-cards {
+    display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  }
+
+  .solar-card-title {
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+
+  .solar-img {
+    display: grid;
+    grid-column: 1/4;
+    grid-row: 1/2;
+  }
+
+  .solar-card-description {
+    display: grid;
+    grid-column: 2/4;
+    grid-row: 1/2;
+    align-items: center;
+  }
+
+  .solar-card-details {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-gap: 5px;
+  }
+
+  .solar-img img {
+    display: grid;
+    height: 65vh;
+    object-fit: cover;
+  }
+
+  .orderNow-button {
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    border: none;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .solar-hero-details {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    position: absolute;
+    top: 40vw;
+    left: 0;
+    right: 0;
+}
+
+  .solar-card-header {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+}
+
+  .solar-card-description {
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    align-items: center;
+  }
+
+  .solar-card-details {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-gap: 5px;
+    padding: 1rem;
+  }
+
+  .solar-img img {
+    display: grid;
+    height: 49vh;
+    object-fit: cover;
+  }
+
+  .orderNow-button {
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 3/4;
+    border: none;
+}
+}
+

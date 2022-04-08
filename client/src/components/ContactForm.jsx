@@ -29,7 +29,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="contactHeader">
+    <section className="contactHeader">
       <h1 className="sectionTitle">Contact</h1>
       <nav className="sectionNav">
         <ol>
@@ -118,7 +118,7 @@ const ContactForm = () => {
           </form>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
