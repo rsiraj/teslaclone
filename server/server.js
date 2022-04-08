@@ -81,10 +81,19 @@ app.get("/signin", (req, res) => {
   });
 });
 
-app.post("/signin", (req, res) => {
-  db.query("SELECT * FROM tesla_contact", (err, response) => {
-    if (err) res.json({ message: ` https://http.cat/404` });
-  });
+app.post("/contact", (req, res) => {
+  const fName = req.body.fName;
+  const lName = req.body.lName;
+  const email = req.body.email;
+  const phone = req.body.phone;
+  const message = req.body.message;
+  db.query(
+    "INSERT INTO tesla_form (first_name, last_name, email, phone_number, message)VALUES (?,?,?,?,?)",
+    [fName, lName, email, phone, message],
+    (err, response) => {
+      if (err) res.json({ message: ` https://http.cat/404` });
+    }
+  );
 });
 
 app.listen(SQL_PORT, () => {
