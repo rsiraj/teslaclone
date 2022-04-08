@@ -84,45 +84,97 @@
   height: 100vh;
   object-fit: contain;
 }
-.order-card-wrapper {
-  height: 100vh;
-  width: 100vw;
-  color: white;
-  background-color: black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+
+@media only screen and (max-width: 821px) {
+  .solar-cards {
+    display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  }
+
+  .solar-card-title {
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+
+  .solar-img {
+    display: grid;
+    grid-column: 1/4;
+    grid-row: 1/2;
+  }
+
+  .solar-card-description {
+    display: grid;
+    grid-column: 2/4;
+    grid-row: 1/2;
+    align-items: center;
+  }
+
+  .solar-card-details {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-gap: 5px;
+  }
+
+  .solar-img img {
+    display: grid;
+    height: 65vh;
+    object-fit: contain;
+  }
+
+  .orderNow-button {
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    border: none;
+  }
 }
 
-.order-card-content {
-  text-align: center;
+@media only screen and (max-width: 500px) {
+  .solar-hero-details {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    position: absolute;
+    top: 40vw;
+    left: 0;
+    right: 0;
 }
-.order-card-details {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+
+  .solar-card-header {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
 }
-.order-title {
-  font-size: 2em;
-  font-weight: 200;
-  padding: 1em;
+
+  .solar-card-description {
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    align-items: center;
+  }
+
+  .solar-card-details {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-gap: 5px;
+    padding: 1rem;
+  }
+
+  .solar-img img {
+    display: grid;
+    height: 49vh;
+    object-fit: contain;
+  }
+
+  .orderNow-button {
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 3/4;
+    border: none;
 }
-.order-subtitle {
-  width: 80%;
 }
-.order-card-buttons {
-  display: flex;
-  flex-direction: column;
-  padding: 1em;
-  align-items: center;
-}
-.order-button {
-  cursor: pointer;
-  padding: 0.5em;
-  margin: 0.5em;
-  text-transform: uppercase;
-  border-style: solid;
-  border-color: white;
-  border-radius: 20px;
-  width: 80%;
-}
+
