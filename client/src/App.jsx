@@ -12,6 +12,7 @@ import SolarPanels from "./pages/SolarPanels";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 import Account from "./pages/Account";
+import Contact from "./pages/Contact";
 // import Footer from "./components/Footer";
 
 function App() {
@@ -43,6 +44,7 @@ function App() {
         <Route path="/solarroofs" element={<SolarRoof data={solar} />} />
         <Route path="/solarpanels" element={<SolarPanels data={solar} />} />
         <Route path="/account" element={<Account />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer></Footer>
     </Router>
