@@ -62,14 +62,14 @@ const Nav = () => {
           Model Y
         </NavLink>
         <NavLink
-          to="solarroofs"
+          to="solarpanels"
           className="header-nav-links"
           onClick={() => setNavbarOpen(false)}
         >
           Solar Panels
         </NavLink>
         <NavLink
-          to="solarpanels"
+          to="solarroofs"
           className="header-nav-links"
           onClick={() => setNavbarOpen(false)}
         >
