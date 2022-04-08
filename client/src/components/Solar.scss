@@ -84,3 +84,51 @@
   height: 100vh;
   object-fit: contain;
 }
+
+@media only screen and (max-width: 821px) {
+  .solar-cards {
+    display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  grid-gap: 10px;
+  }
+
+  .solar-card-title {
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+
+  .solar-img {
+    display: grid;
+    grid-column: 1/4;
+    grid-row: 1/2;
+  }
+
+  .solar-card-description {
+    display: grid;
+    grid-column: 2/4;
+    grid-row: 1/2;
+    align-items: center;
+  }
+
+  .solar-card-details {
+    grid-column: 1/3;
+    grid-row: 2/3;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+  }
+
+  .solar-img img {
+    display: grid;
+    width: 100%;
+    height: 60vh;
+    object-fit: contain;
+  }
+
+  .orderNow-button {
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+}
