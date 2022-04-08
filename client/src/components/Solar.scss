@@ -82,7 +82,7 @@
   display: block;
   width: 100%;
   height: 100vh;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 
@@ -121,7 +121,7 @@
   .solar-img img {
     display: grid;
     height: 65vh;
-    object-fit: contain;
+    object-fit: cover;
   }
 
   .orderNow-button {
@@ -167,7 +167,7 @@
   .solar-img img {
     display: grid;
     height: 49vh;
-    object-fit: contain;
+    object-fit: cover;
   }
 
   .orderNow-button {
