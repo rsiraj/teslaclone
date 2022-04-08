@@ -5,11 +5,12 @@
 
 
 .safety-container {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
     margin: 2rem;
 
     .safety-container-leftSide {
-        flex: 20%;
+        // flex: 20%;
         margin: 2rem;
 
 
@@ -29,7 +30,7 @@
     }
 
     .safety-container-rightSide {
-        flex: 80%;
+        width: 100%;
     }
 
     .safety-image {
