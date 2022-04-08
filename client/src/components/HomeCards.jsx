@@ -4,7 +4,7 @@ import "./homeCards.scss";
 
 const HomeCards = ({ data }) => {
   return (
-    <div>
+    <>
       {data.map((item) => (
         <section
           className={`hero-card hero-card_${item.id} font-link`}
@@ -82,7 +82,7 @@ const HomeCards = ({ data }) => {
         </section>
       ))}
       ;
-    </div>
+    </>
   );
 };
 
