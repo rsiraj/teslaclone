@@ -1,9 +1,15 @@
-import React from 'react'
-
-const Model3 = () => {
+import React from "react";
+import CarHero from "../components/CarHero";
+import Safety from "../components/Safety";
+import Order from "../components/Order";
+const Model3 = ({ data }) => {
   return (
-    <div>Model3</div>
-  )
-}
+    <div>
+      <CarHero data={data} />
+      <Safety data={data} />
+      <Order />
+    </div>
+  );
+};
 
-export default Model3
+export default Model3;
