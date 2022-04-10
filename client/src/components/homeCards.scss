@@ -85,6 +85,9 @@ span {
 .button-group {
   display: flex;
   gap: 25px;
+  position: relative;
+  bottom: -10vw;
+
 }
 
 .custom-btn {
@@ -207,6 +210,7 @@ span {
     align-content: center;
     padding: 100px;
 
+
     & h1 {
       font-size: 40px;
       white-space: nowrap;
@@ -225,6 +229,8 @@ span {
   }
 
   .button-group {
+    margin: auto;
+    width: 90%;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -234,7 +240,7 @@ span {
     gap: 10px;
     position: relative;
     top: -220px;
-    z-index: 2;
+    z-index: 0;
   }
 
   .custom-btn,

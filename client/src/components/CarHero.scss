@@ -103,3 +103,26 @@
         margin-top: 1rem;
     }
 }
+
+@media only screen and (max-width: 500px) {
+    .car-hero-image {
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &.hero_img_1 {
+    background-image: url("../../public/img/ms-homepage-mobile.jpeg");
+    }
+    &.hero_img_2 {
+    background-image: url("../../public/img/M3-Homepage-mobile.jpeg");
+}
+    &.hero_img_3 {
+    background-image: url("../../public/img/ModelX-Homepage-mobile.jpeg");
+}
+    &.hero_img_4 {
+    background-image: url("../../public/img/Mobile-ModelY.jpeg");
+    }
+    }
+}
