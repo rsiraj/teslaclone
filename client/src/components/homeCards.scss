@@ -118,6 +118,8 @@ span {
 .link-description {
   color: #000;
   display: inline-block;
+  text-decoration: underline;
+  margin-left: 5px;
 
   &:link,
   &:visited {
