@@ -74,6 +74,12 @@ span {
   display: inline-block;
 }
 
+.subtitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .product-btn {
   position: relative;
   top: -5rem;
