@@ -42,19 +42,21 @@
 }
 
 // .header-nav-menu {
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   flex: 1;
-// }
-
-.header-nav-menu .header-nav-links {
-  font-weight: 600;
-  margin-right: 10px;
-  color: black;
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: center;
+  //   flex: 1;
+  // }
+  
+  .header-nav-menu .header-nav-links {
+    font-weight: 600;
+    margin-right: 10px;
+    color: black;
+    text-decoration: none;
 }
 .font-white .header-nav-links {
   color: white;
+  text-decoration: none;
 }
 :hover.header-nav-links {
   background-color: #90909054;
@@ -80,7 +82,7 @@
   width: 300px;
   height: 100%;
   transform: translateX(100%);
-  z-index: 10;
+  z-index: 100;
   padding: 20px;
   transition: 0.3s ease-in-out;
   overflow-y: hidden;
