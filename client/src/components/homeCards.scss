@@ -116,7 +116,6 @@ span {
 }
 
 .link-description {
-  text-decoration: underline;
   color: #000;
   display: inline-block;
 
@@ -127,7 +126,7 @@ span {
 
   &:active,
   &:hover {
-    color: #000;
+    color: #777;
   }
 }
 

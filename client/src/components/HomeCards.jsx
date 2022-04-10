@@ -17,7 +17,7 @@ const HomeCards = ({ data }) => {
               <span>{item.item_description} </span>
               <a href="https://www.tesla.com/support/taking-delivery?redirect=no">
                 <span className="link-description">
-                  {item.id < 5 ? "Touchless Delivery" : ""}
+                  {item.id < 5 ? ": Touchless Delivery" : ""}
                 </span>
               </a>
             </div>

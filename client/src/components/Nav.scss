@@ -38,6 +38,7 @@
   flex-wrap: nowrap;
   color: black;
   font-family: "Sawarabi Gothic", sans-serif;
+  text-decoration: none;
 }
 
 // .header-nav-menu {
@@ -55,6 +56,7 @@
 }
 .font-white .header-nav-links {
   color: white;
+  text-decoration: none;
 }
 :hover.header-nav-links {
   background-color: #90909054;
