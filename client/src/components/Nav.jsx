@@ -102,6 +102,60 @@ const Nav = () => {
           />
         </div>
         <ul>
+        <li>
+            <NavLink
+              className="header-nav-links"
+              to="/models"
+              onClick={() => setNavbarOpen(false)}
+            >
+              Model S
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              className="header-nav-links"
+              to="/model3"
+              onClick={() => setNavbarOpen(false)}
+            >
+              Model 3
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              className="header-nav-links"
+              to="/modelx"
+              onClick={() => setNavbarOpen(false)}
+            >
+              Model X
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              className="header-nav-links"
+              to="/modely"
+              onClick={() => setNavbarOpen(false)}
+            >
+              Model Y
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              className="header-nav-links"
+              to="/solarroofs"
+              onClick={() => setNavbarOpen(false)}
+            >
+              Solar Roof
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              className="header-nav-links"
+              to="/solarpanels"
+              onClick={() => setNavbarOpen(false)}
+            >
+              Solar Panels
+            </NavLink>
+          </li>
           <li>
             <NavLink
               className="header-nav-links"
@@ -217,60 +271,6 @@ const Nav = () => {
               onClick={() => setNavbarOpen(false)}
             >
               Account
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              className="header-nav-links"
-              to="/models"
-              onClick={() => setNavbarOpen(false)}
-            >
-              Model S
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              className="header-nav-links"
-              to="/model3"
-              onClick={() => setNavbarOpen(false)}
-            >
-              Model 3
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              className="header-nav-links"
-              to="/modelx"
-              onClick={() => setNavbarOpen(false)}
-            >
-              Model X
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              className="header-nav-links"
-              to="/modely"
-              onClick={() => setNavbarOpen(false)}
-            >
-              Model Y
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              className="header-nav-links"
-              to="/solarroofs"
-              onClick={() => setNavbarOpen(false)}
-            >
-              Solar Roof
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              className="header-nav-links"
-              to="/solarpanels"
-              onClick={() => setNavbarOpen(false)}
-            >
-              Solar Panels
             </NavLink>
           </li>
           {/* <li><Link className="header-nav-links" to=''></Link></li> */}
