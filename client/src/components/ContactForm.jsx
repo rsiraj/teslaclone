@@ -13,7 +13,7 @@ const ContactForm = () => {
     e.preventDefault();
     console.log(fName, email, message, lName, phone);
     axios
-      .post("http://localhost:8000/contact", {
+      .post("http://c9tesla.com:8000/contact", {
         fName: fName,
         lName: lName,
         email: email,
