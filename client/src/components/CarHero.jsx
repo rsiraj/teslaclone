@@ -46,6 +46,62 @@ const CarHero = ({ data }) => {
       return data[0].hero_subtitle4;
     }
   };
+  const mileage = () => {
+    if (location.pathname === "/models") {
+      return "397";
+    }
+    if (location.pathname === "/model3") {
+      return "358";
+    }
+    if (location.pathname === "/modelx") {
+      return "333";
+    }
+    if (location.pathname === "/modely") {
+      return "330";
+    }
+  }
+  const acceleration = () => {
+    if (location.pathname === "/models") {
+      return "1.99";
+    }
+    if (location.pathname === "/model3") {
+      return "3.1";
+    }
+    if (location.pathname === "/modelx") {
+      return "2.5";
+    }
+    if (location.pathname === "/modely") {
+      return "3.5";
+    }
+  }
+  const topSpeed = () => {
+    if (location.pathname === "/models") {
+      return "200";
+    }
+    if (location.pathname === "/model3") {
+      return "162";
+    }
+    if (location.pathname === "/modelx") {
+      return "155";
+    }
+    if (location.pathname === "/modely") {
+      return "155";
+    }
+  }
+  const peakPower = () => {
+    if (location.pathname === "/models") {
+      return "1020";
+    }
+    if (location.pathname === "/model3") {
+      return "450";
+    }
+    if (location.pathname === "/modelx") {
+      return "1020";
+    }
+    if (location.pathname === "/modely") {
+      return "450";
+    }
+  }
   return (
     <>
       {data.map((item) => (
@@ -56,19 +112,19 @@ const CarHero = ({ data }) => {
           </div>
           <div className="car-hero-feature-container">
             <div className="card-hero-feature">
-              <h1 className="car-hero-features-data">396 mi </h1>
+              <h1 className="car-hero-features-data">{`${mileage()} mi `}</h1>
               <p className="car-hero-features-title">Range (EPA est.)</p>
             </div>
             <div className="card-hero-feature">
-              <h1 className="car-hero-features-data">1.99 s</h1>
+              <h1 className="car-hero-features-data">{`${acceleration()} s `}</h1>
               <p className="car-hero-features-title">0-60 mph*</p>
             </div>
             <div className="card-hero-feature">
-              <h1 className="car-hero-features-data">200 mph</h1>
+              <h1 className="car-hero-features-data">{`${topSpeed()} mph `}</h1>
               <p className="car-hero-features-title">Top Speed</p>
             </div>
             <div className="card-hero-feature">
-              <h1 className="car-hero-features-data">1,020 hp</h1>
+              <h1 className="car-hero-features-data">{`${peakPower()} hp `}</h1>
               <p className="car-hero-features-title">Peak Power</p>
             </div>
             <button className="car-feature-button">Order Now</button>

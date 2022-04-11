@@ -13,7 +13,6 @@ import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 import Account from "./pages/Account";
 import Contact from "./pages/Contact";
-// import Footer from "./components/Footer";
 
 function App() {
   const [landingData, setLandingData] = useState([]);
@@ -46,7 +45,7 @@ function App() {
         <Route path="/account" element={<Account />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-      <Footer></Footer>
+      <Footer/>
     </Router>
   );
 }
