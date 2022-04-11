@@ -3,7 +3,7 @@ import "./OrderNowButton.scss";
 const OrderNowButton = () => {
   return (
     <>
-      <button className="orderNow-button">Order Now</button>
+      <button className="orderNow-btn">Order Now</button>
     </>
   );
 };

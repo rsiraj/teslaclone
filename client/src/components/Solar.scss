@@ -119,6 +119,7 @@
   }
 
   .solar-img img {
+    display: none;
     display: grid;
     height: 65vh;
     object-fit: cover;
@@ -133,6 +134,10 @@
 }
 
 @media only screen and (max-width: 500px) {
+  // .solar-hero {
+  //   // content:url("../../public/img/sr-storm-mobile.png")
+  //   content:url("../../public/img/solar-panels-hero-en-mobile.jpeg")
+  // }
   .solar-hero-details {
     margin: 0;
     padding: 0;
@@ -159,7 +164,7 @@
   .solar-card-details {
     width: 100vw;
     display: grid;
-    grid-template-columns: repeat(3, 2fr);
+    grid-template-columns: repeat(1, 2fr);
     grid-gap: 5px;
     padding: 1rem;
   }

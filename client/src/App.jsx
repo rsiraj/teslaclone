@@ -13,7 +13,6 @@ import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 import Account from "./pages/Account";
 import Contact from "./pages/Contact";
-// import Footer from "./components/Footer";
 
 function App() {
   const [landingData, setLandingData] = useState([]);
@@ -21,13 +20,13 @@ function App() {
   const [carDataX, setCarDataX] = useState([]);
 
   useEffect(() => {
-    Axios.get("http://127.0.0.1:8000").then((response) => {
+    Axios.get("http://localhost:8000").then((response) => {
       setLandingData(response.data);
     });
-    Axios.get("http://127.0.0.1:8000/solarroofs").then((response) => {
+    Axios.get("http://localhost:8000/solarroofs").then((response) => {
       setSolar(response.data);
     });
-    Axios.get("http://127.0.0.1:8000/modelx").then((response) => {
+    Axios.get("http://localhost:8000/modelx").then((response) => {
       setCarDataX(response.data);
     });
   }, []);
@@ -46,7 +45,7 @@ function App() {
         <Route path="/account" element={<Account />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-      <Footer></Footer>
+      <Footer/>
     </Router>
   );
 }

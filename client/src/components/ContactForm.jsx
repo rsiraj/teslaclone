@@ -31,7 +31,7 @@ const ContactForm = () => {
   return (
     <section className="contactHeader">
       <h1 className="sectionTitle">Contact</h1>
-      <nav className="sectionNav">
+      <nav className="sectionNav"
         <ul>
           <li>About</li>
           <li>Careers</li>
@@ -65,6 +65,7 @@ const ContactForm = () => {
             Visit our first responders page to download Tesla reference guides
             for emergency personnel.
           </p>
+
         </div>
         <div className="contactInfo">
           <h3>Press</h3>

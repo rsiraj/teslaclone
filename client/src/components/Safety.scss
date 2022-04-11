@@ -8,6 +8,8 @@
     display: grid;
     grid-template-columns: 1fr 2fr;
     margin: 2rem;
+    height: 95vh;
+    text-align: center;
 
     .safety-container-leftSide {
         // flex: 20%;
@@ -35,5 +37,11 @@
 
     .safety-image {
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .safety-container {
+        grid-template-columns: 1fr;
     }
 }
