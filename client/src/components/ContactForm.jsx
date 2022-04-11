@@ -32,69 +32,107 @@ const ContactForm = () => {
     <section className="contactHeader">
       <h1 className="sectionTitle">Contact</h1>
       <nav className="sectionNav">
-        <ol>
+        <ul>
           <li>About</li>
           <li>Careers</li>
           <li>Contact</li>
           <li>Legal</li>
           <li>Investors</li>
           <li>Suppliers</li>
-        </ol>
+        </ul>
       </nav>
       <hr />
-      <div className="contactInfo">
-        <h2>Sales</h2>
-        <p>Visit our Find Us page to locate your nearest Tesla Store.</p>
-        <h2>Careers</h2>
-        <p>
-          Visit our Careers page for a list of current employment opportunites.
-        </p>
-        <h2>Press</h2>
-        <p>Visit our Find Us page to locate your nearest Tesla Store</p>
-        <div className="formHeader">
-          <form className="contact_form" action="">
-            <label htmlFor="">First Name</label>
-            <input
-              type="text"
-              onChange={(e) => {
-                setFName(e.target.value);
-              }}
-            />
-            <label htmlFor="">Last Name</label>
-            <input
-              type="text"
-              onChange={(e) => {
-                setLName(e.target.value);
-              }}
-            />
-            <label htmlFor="">Contact Preference</label>
-            <select name="contact_preference" id="contact_preference">
-              <option value="phone">Phone</option>
-              <option value="email">Email</option>
-            </select>
-            <label htmlFor="">Phone Number</label>
-            <input
-              type="number"
-              onChange={(e) => {
-                setPhone(e.target.value);
-              }}
-            />
-            <label htmlFor="">Email</label>
-            <input
-              type="email"
-              onChange={(e) => {
-                setEmail(e.target.value);
-              }}
-            />
-            <label htmlFor="">First Name</label>
-            <input type="text" />
-            <label htmlFor="">Zipcode</label>
-            <input type="number" />
-            <label htmlFor="">Region</label>
-            <select name="region" id="region">
-              <option value="phone">Phone</option>
-              <option value="email">Email</option>
-            </select>
+      <div className="contactInfoContainer">
+        <div className="contactInfo">
+          <h3>Sales</h3>
+          <p>Visit our Find Us page to locate your nearest Tesla Store.</p>
+          <h3>Customer Support & Roadside Assistance</h3>
+          <p>
+            Visit our Support page to find answers and learn about our products.
+          </p>
+          <p>Emergency Roadside Assistance:</p>
+          <p>International phone numbers</p>
+          <p>Safety recall information</p>
+        </div>
+        <div className="contactInfo">
+          <h3>Careers</h3>
+          <p>
+            Visit our Careers page for a list of current employment
+            opportunites.
+          </p>
+          <h3>First Responders</h3>
+          <p>
+            Visit our first responders page to download Tesla reference guides
+            for emergency personnel.
+          </p>
+        </div>
+        <div className="contactInfo">
+          <h3>Press</h3>
+          <p>North America Press@tesla.com</p>
+          <p>Europe & Middle East EUPress@tesla.com</p>
+          <p>Australia and Asia APACPress@tesla.com</p>
+          <p>China China-Press@tesla.com</p>
+        </div>
+      </div>
+      <div className="formHeader">
+        <h3>Submit a question or comment</h3>
+        <p>Many common questions are answered on our Blog and Support pages.</p>
+        <form className="contact_form" action="">
+          <div className="contact_form_info">
+            <div className="input_info">
+              <label htmlFor="">First Name</label>
+              <input
+                type="text"
+                onChange={(e) => {
+                  setFName(e.target.value);
+                }}
+              />
+            </div>
+            <div className="input_info">
+              <label htmlFor="">Last Name</label>
+              <input
+                type="text"
+                onChange={(e) => {
+                  setLName(e.target.value);
+                }}
+              />
+            </div>
+            <div className="input_info">
+              <label htmlFor="">Contact Preference</label>
+              <select name="contact_preference" id="contact_preference">
+                <option value="phone">Phone</option>
+                <option value="email">Email</option>
+              </select>
+            </div>
+            <div className="input_info">
+              <label htmlFor="">Phone Number</label>
+              <input
+                type="number"
+                onChange={(e) => {
+                  setPhone(e.target.value);
+                }}
+              />
+            </div>
+            <div className="input_info">
+              <label htmlFor="">Email</label>
+              <input
+                type="email"
+                onChange={(e) => {
+                  setEmail(e.target.value);
+                }}
+              />
+            </div>
+            <div className="input_info">
+              <label htmlFor="">Zipcode</label>
+              <input type="number" />
+            </div>
+            <div className="input_info">
+              <label htmlFor="">Region</label>
+              <input type="text" />
+            </div>
+          </div>
+          <div className="question_info">
+          <div className="input_info">
             <label htmlFor="">Topic</label>
             <select name="topic" id="topic">
               <option value="order">
@@ -104,6 +142,8 @@ const ContactForm = () => {
                 Becoming a Tesla Energy Products Certified installer
               </option>
             </select>
+          </div>
+          <div className="input_info">
             <label htmlFor="">Question/Comment</label>
             <textarea
               name=""
@@ -114,9 +154,11 @@ const ContactForm = () => {
                 setMessage(e.target.value);
               }}
             ></textarea>
-            <button onClick={handleForm}>Submit</button>
-          </form>
-        </div>
+            </div>
+          </div>
+          <div className="hidden_btn"></div>
+          <button className="input_info_btn" onClick={handleForm}>Submit</button>
+        </form>
       </div>
     </section>
   );
