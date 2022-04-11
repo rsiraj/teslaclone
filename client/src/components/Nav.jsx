@@ -240,10 +240,10 @@ const Nav = () => {
           <li>
             <NavLink
               className="header-nav-links"
-              to=""
+              to="/contact"
               onClick={() => setNavbarOpen(false)}
             >
-              Support
+              Contact
             </NavLink>
           </li>
           <li>

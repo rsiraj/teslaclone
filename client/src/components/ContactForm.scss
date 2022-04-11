@@ -109,3 +109,13 @@
     background: rgb(0, 0, 200);
     color: #fff;
   }
+
+@media only screen and (max-width: 500px) {
+  .contactHeader {
+    display: flex;
+  }
+  .contactInfoContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+}
