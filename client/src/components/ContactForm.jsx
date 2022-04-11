@@ -30,18 +30,20 @@ const ContactForm = () => {
 
   return (
     <section className="contactHeader">
-      <h1 className="sectionTitle">Contact</h1>
-      <nav className="sectionNav"
-        <ul>
-          <li>About</li>
-          <li>Careers</li>
-          <li>Contact</li>
-          <li>Legal</li>
-          <li>Investors</li>
-          <li>Suppliers</li>
-        </ul>
-      </nav>
-      <hr />
+      <div>
+        <h1 className="sectionTitle">Contact</h1>
+        <nav className="sectionNav">
+          <ul>
+            <li>About</li>
+            <li>Careers</li>
+            <li>Contact</li>
+            <li>Legal</li>
+            <li>Investors</li>
+            <li>Suppliers</li>
+          </ul>
+        </nav>
+        <hr />
+      </div>
       <div className="contactInfoContainer">
         <div className="contactInfo">
           <h3>Sales</h3>
@@ -65,7 +67,6 @@ const ContactForm = () => {
             Visit our first responders page to download Tesla reference guides
             for emergency personnel.
           </p>
-
         </div>
         <div className="contactInfo">
           <h3>Press</h3>
@@ -133,32 +134,34 @@ const ContactForm = () => {
             </div>
           </div>
           <div className="question_info">
-          <div className="input_info">
-            <label htmlFor="">Topic</label>
-            <select name="topic" id="topic">
-              <option value="order">
-                Ordering a Tesla Powerwall or Solar Roof
-              </option>
-              <option value="installer">
-                Becoming a Tesla Energy Products Certified installer
-              </option>
-            </select>
-          </div>
-          <div className="input_info">
-            <label htmlFor="">Question/Comment</label>
-            <textarea
-              name=""
-              id=""
-              cols="30"
-              rows="10"
-              onChange={(e) => {
-                setMessage(e.target.value);
-              }}
-            ></textarea>
+            <div className="input_info">
+              <label htmlFor="">Topic</label>
+              <select name="topic" id="topic">
+                <option value="order">
+                  Ordering a Tesla Powerwall or Solar Roof
+                </option>
+                <option value="installer">
+                  Becoming a Tesla Energy Products Certified installer
+                </option>
+              </select>
+            </div>
+            <div className="input_info">
+              <label htmlFor="">Question/Comment</label>
+              <textarea
+                name=""
+                id=""
+                cols="30"
+                rows="10"
+                onChange={(e) => {
+                  setMessage(e.target.value);
+                }}
+              ></textarea>
             </div>
           </div>
           <div className="hidden_btn"></div>
-          <button className="input_info_btn" onClick={handleForm}>Submit</button>
+          <button className="input_info_btn" onClick={handleForm}>
+            Submit
+          </button>
         </form>
       </div>
     </section>
