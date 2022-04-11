@@ -4,10 +4,12 @@ import "./Order.scss";
 const Order = () => {
   return (
     <section className="order-section">
-      <div className="order-buttons">
+      <div className="order-button-group">
         <h1 className="order-section-title">Experience this Tesla!</h1>
-        <button className="order-now-button">Order Now</button>
-        <button className="compare-button">Compare</button>
+        <div className="order-buttons">
+          <button className="order-now-button">Order Now</button>
+          <button className="compare-button">Compare</button>
+        </div>
       </div>
       <div className="order-image-section">
         <img

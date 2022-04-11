@@ -74,6 +74,12 @@ span {
   display: inline-block;
 }
 
+.subtitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .product-btn {
   position: relative;
   top: -5rem;
@@ -85,6 +91,8 @@ span {
 .button-group {
   display: flex;
   gap: 25px;
+  position: relative;
+  bottom: -10vw;
 }
 
 .custom-btn {
@@ -113,9 +121,10 @@ span {
 }
 
 .link-description {
-  text-decoration: underline;
   color: #000;
   display: inline-block;
+  text-decoration: underline;
+  margin-left: 5px;
 
   &:link,
   &:visited {
@@ -124,7 +133,7 @@ span {
 
   &:active,
   &:hover {
-    color: #000;
+    color: #777;
   }
 }
 
@@ -225,6 +234,8 @@ span {
   }
 
   .button-group {
+    margin: auto;
+    width: 90%;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -234,7 +245,7 @@ span {
     gap: 10px;
     position: relative;
     top: -220px;
-    z-index: 2;
+    z-index: 0;
   }
 
   .custom-btn,

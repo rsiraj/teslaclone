@@ -13,7 +13,7 @@ const HomeCards = ({ data }) => {
         >
           <div className="hero-card_description">
             <h1>{item.item_model}</h1>
-            <div>
+            <div className="subtitle">
               <span>{item.item_description} </span>
               <a href="https://www.tesla.com/support/taking-delivery?redirect=no">
                 <span className="link-description">
