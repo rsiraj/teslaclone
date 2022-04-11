@@ -6,6 +6,7 @@ import ScrollToTop from "react-scroll-to-top";
 import { ReactComponent as MySVG } from "../arrow.svg";
 
 const Model3 = ({ data }) => {
+  window.scrollTo(0, 0);
   return (
     <div>
       <CarHero data={data} />

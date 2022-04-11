@@ -118,6 +118,7 @@ span {
   border-radius: 20px;
   padding: 10px 64px;
   text-decoration: none;
+  max-width: 500px;
 }
 
 .link-description {
@@ -158,8 +159,8 @@ span {
 
 .chevron-down {
   position: absolute;
-  bottom: 5%;
   right: 50%;
+  bottom: 5%;
 }
 
 @media only screen and (max-width: 821px) {

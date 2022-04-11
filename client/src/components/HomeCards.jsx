@@ -81,7 +81,7 @@ const HomeCards = ({ data }) => {
           </a>
         </section>
       ))}
-      ;
+      
     </>
   );
 };

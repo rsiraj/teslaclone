@@ -20,7 +20,7 @@ const Nav = () => {
   };
   const [navbarOpen, setNavbarOpen] = useState(false);
   return (
-    <div className="header">
+    <div className="header" id="nav">
       <NavLink
         className="header-logo-wrapper"
         to="/"

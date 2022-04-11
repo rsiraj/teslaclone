@@ -11,7 +11,6 @@ const ContactForm = () => {
 
   const handleForm = (e) => {
     e.preventDefault();
-    console.log(fName, email, message, lName, phone);
     axios
       .post("http://c9tesla.com:8000/contact", {
         fName: fName,

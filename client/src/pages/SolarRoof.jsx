@@ -4,6 +4,7 @@ import ScrollToTop from "react-scroll-to-top";
 import {ReactComponent as MySVG} from "../arrow.svg"
 
 const SolarRoof = ({ data }) => {
+  window.scrollTo(0, 0);
   return (
     <>
       <Solar data={data} />;
