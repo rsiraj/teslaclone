@@ -1,7 +1,7 @@
 .contactHeader {
   padding-top: 110px;
-  padding-left: 13rem;
-  padding-right: 13rem;
+  padding-left: 17rem;
+  padding-right: 17rem;
   color: gray;
 }
 
@@ -110,12 +110,38 @@
     color: #fff;
   }
 
-@media only screen and (max-width: 500px) {
-  .contactHeader {
-    display: flex;
+@media only screen and (max-width: 900px) {
+  .contact_form {
+    grid-template-columns: repeat(1, 1fr);
+    width: 100vw;
   }
   .contactInfoContainer {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .contact_form_info { 
+      grid-template-columns: repeat(1, 1fr);
+  }
+
+  .contactHeader {
+      padding-left: 0;
+      padding-right: 0;
+  }
+
+  .question_info {
+    width: 100%;
+  }
+
+  .input_info_btn {
+      margin-left: 0;
+      margin-right: 0;
+
+  }
+
+  .sectionNav {
+      display: none;
   }
   
 }
