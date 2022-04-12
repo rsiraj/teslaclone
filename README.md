@@ -42,6 +42,7 @@ We developed our website, using the original Tesla site as our blueprint. We mad
 ### Teamwork
 
 Our team utilize Monday to assign and manage team tasks. We followed the Agile methodology, working in sprints in our daily meetings and assigning daily tasks to implement and improve webpages and features as we built out the website.
+
 ![Screen Shot 2022-04-11 at 11 45 15 PM](https://user-images.githubusercontent.com/72173514/162876189-82430ad5-1661-4f63-b6ce-ccfe594db480.png)
 
 Our team used Github and used branches for each page/feature to work on it. This was a seamless process and we had no issues with our version control. Since the main branch was protected, we were able to ensure all merges to main were intentional and reviewed before approval.
