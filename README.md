@@ -48,6 +48,6 @@ Our team used Github and used branches for each page/feature to work on it. This
 
 ![Screen Shot 2022-04-12 at 12 05 20 AM](https://user-images.githubusercontent.com/72173514/162878195-099c4918-0f33-4954-a7b3-c5abbb975cb0.png)
 
-$$$ Conclusion and Reflection
+### Conclusion and Reflection
 
 This project was a great opportunity to apply all the skills we have learned in this cohort while working in a team. This is the closest we have been to working on real world projects in an agile environment. It was a great opportunity for us to learn and grow, but to also get to know each other and build our friendship as peers. 
