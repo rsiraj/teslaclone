@@ -87,6 +87,7 @@ const ContactForm = () => {
                 onChange={(e) => {
                   setFName(e.target.value);
                 }}
+                required
               />
             </div>
             <div className="input_info">
@@ -96,6 +97,7 @@ const ContactForm = () => {
                 onChange={(e) => {
                   setLName(e.target.value);
                 }}
+                required
               />
             </div>
             <div className="input_info">
@@ -108,10 +110,13 @@ const ContactForm = () => {
             <div className="input_info">
               <label htmlFor="">Phone Number</label>
               <input
-                type="number"
+                type="text"
                 onChange={(e) => {
                   setPhone(e.target.value);
                 }}
+                placeholder="123-456-7890"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                required
               />
             </div>
             <div className="input_info">
@@ -121,11 +126,17 @@ const ContactForm = () => {
                 onChange={(e) => {
                   setEmail(e.target.value);
                 }}
+                required
               />
             </div>
             <div className="input_info">
               <label htmlFor="">Zipcode</label>
-              <input type="number" />
+              <input
+                type="text"
+                placeholder=" XXXXX"
+                pattern="[0-9]{5}"
+                required
+              />
             </div>
             <div className="input_info">
               <label htmlFor="">Region</label>
@@ -154,6 +165,7 @@ const ContactForm = () => {
                 onChange={(e) => {
                   setMessage(e.target.value);
                 }}
+                required
               ></textarea>
             </div>
           </div>
