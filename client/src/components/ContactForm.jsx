@@ -12,7 +12,7 @@ const ContactForm = () => {
   const handleForm = (e) => {
     e.preventDefault();
     axios
-      .post("http://c9tesla.com:8000/contact", {
+      .post("http://localhost:8000/contact", {
         fName: fName,
         lName: lName,
         email: email,
@@ -81,7 +81,7 @@ const ContactForm = () => {
         <form className="contact_form" action="">
           <div className="contact_form_info">
             <div className="input_info">
-              <label htmlFor="">First Name</label>
+              <label htmlFor="">First Name *</label>
               <input
                 type="text"
                 onChange={(e) => {
@@ -91,7 +91,7 @@ const ContactForm = () => {
               />
             </div>
             <div className="input_info">
-              <label htmlFor="">Last Name</label>
+              <label htmlFor="">Last Name *</label>
               <input
                 type="text"
                 onChange={(e) => {
@@ -108,7 +108,7 @@ const ContactForm = () => {
               </select>
             </div>
             <div className="input_info">
-              <label htmlFor="">Phone Number</label>
+              <label htmlFor="">Phone Number *</label>
               <input
                 type="text"
                 onChange={(e) => {
@@ -120,7 +120,7 @@ const ContactForm = () => {
               />
             </div>
             <div className="input_info">
-              <label htmlFor="">Email</label>
+              <label htmlFor="">Email *</label>
               <input
                 type="email"
                 onChange={(e) => {
@@ -156,7 +156,7 @@ const ContactForm = () => {
               </select>
             </div>
             <div className="input_info">
-              <label htmlFor="">Question/Comment</label>
+              <label htmlFor="">Question/Comment *</label>
               <textarea
                 name=""
                 id=""

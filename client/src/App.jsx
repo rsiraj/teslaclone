@@ -20,13 +20,13 @@ function App() {
   const [carDataX, setCarDataX] = useState([]);
 
   useEffect(() => {
-    Axios.get("http://c9tesla.com:8000").then((response) => {
+    Axios.get("http://localhost:8000").then((response) => {
       setLandingData(response.data);
     });
-    Axios.get("http://c9tesla.com:8000/solarroofs").then((response) => {
+    Axios.get("http://localhost:8000/solarroofs").then((response) => {
       setSolar(response.data);
     });
-    Axios.get("http://c9tesla.com:8000/modelx").then((response) => {
+    Axios.get("http://localhost:8000/modelx").then((response) => {
       setCarDataX(response.data);
     });
   }, []);
