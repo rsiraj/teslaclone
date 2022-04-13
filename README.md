@@ -4,7 +4,7 @@ In this project, we implemented our knowledge from design week, full-stack progr
 
 You can find the hosted application at http://dylisthebest.c9tesla.com
 ## Created by:
-### Daniel Escamilla, Emmanuel Massey, Harold Arriola Nucamendi, Jakari Stratton, Rehan Siraj, Tony Lee
+### [Daniel Escamilla](https://github.com/DanielEscamilla1), [Emmanuel Massey](https://github.com/Emassey123), [Harold Arriola Nucamendi](https://github.com/ArriolaHarold2001), [Jakari Stratton](https://github.com/Ultrafeeder), [Rehan Siraj](https://github.com/rsiraj), [Tony Lee](https://github.com/TonyLee44)
 
 ## Instructions to run app locally
 
